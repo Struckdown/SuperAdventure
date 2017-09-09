@@ -1,0 +1,4 @@
+C:\Users\Boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\bin\Release\Engine.dll
+C:\Users\Boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\bin\Release\Engine.pdb
+C:\Users\Boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\obj\Release\Engine.dll
+C:\Users\Boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\obj\Release\Engine.pdb
