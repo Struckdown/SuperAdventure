@@ -1,0 +1,8 @@
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.exe.config
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.exe
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\bin\Debug\Engine.dll
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\bin\Debug\Engine.pdb
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb
