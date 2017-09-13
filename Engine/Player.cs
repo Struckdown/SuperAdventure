@@ -8,6 +8,7 @@ namespace Engine
 {
     public class Player : LivingCreature
     {
+        private const int missChance = 15;
         private int _gold;
         private int _experiencePoints;
         private Location _currentLocation;
@@ -216,9 +217,10 @@ namespace Engine
 
         public void UseWeapon(Weapon weapon)
         {
+            int roll = RandomNumberGenerator.NumberBetween(1, 100);
             int damage = RandomNumberGenerator.NumberBetween(weapon.MinimumDamage, weapon.MaximumDamage);
 
-            if (damage == 0)
+            if (roll <= missChance || damage == 0)
             {
                 RaiseMessage("You missed the " + CurrentMonster.Name);
             }

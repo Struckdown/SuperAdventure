@@ -17,7 +17,7 @@ namespace Engine
         public const int ITEM_ID_PIECE_OF_FUR = 3;
         public const int ITEM_ID_SNAKE_FANG = 4;
         public const int ITEM_ID_SNAKESKIN = 5;
-        public const int ITEM_ID_CLUB = 6;
+        public const int ITEM_ID_CLUB = 6;  
         public const int ITEM_ID_HEALING_POTION = 7;
         public const int ITEM_ID_SPIDER_FANG = 8;
         public const int ITEM_ID_SPIDER_SILK = 9;
@@ -56,7 +56,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 1));
             _items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins", 2));
             _items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10, 8));
-            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5, 3));
+            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 8, 3));
             _items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
             _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
             _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
@@ -112,16 +112,24 @@ namespace Engine
             // Create each location
             Location home = new Location(LOCATION_ID_HOME, "Home", "Your house. You really need to clean up the place.");
 
-            Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain.");
+            Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain. Bob the Rat-Catcher is around.");
 
             Vendor bobTheRatCatcher = new Vendor("Bob the Rat-Catcher");
             bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_PIECE_OF_FUR), 5);
             bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_RAT_TAIL), 3);
+            bobTheRatCatcher.AddItemToInventory(ItemByID(ITEM_ID_CLUB), 1);
 
             townSquare.VendorWorkingHere = bobTheRatCatcher;
 
-            Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves.");
+            Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves. " +
+                "Venessa smiles at you and offers you to browse her goods.");
             alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
+
+            Vendor venessaTheAlchemist = new Vendor("Venessa the Alchemist");
+            venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_HEALING_POTION), 5);
+            venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_SNAKESKIN), 3);
+
+            alchemistHut.VendorWorkingHere = venessaTheAlchemist;
 
             Location alchemistsGarden = new Location(LOCATION_ID_ALCHEMISTS_GARDEN, "Alchemist's garden", "Many plants are growing here.");
             alchemistsGarden.AddMonster(MONSTER_ID_RAT, 100);
