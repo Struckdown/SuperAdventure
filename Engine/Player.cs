@@ -159,6 +159,12 @@ namespace Engine
                 return;
             }
 
+            if (PlayerDoesNotHaveRequiredLevelToEnter(location))
+            {
+                RaiseMessage("You must be level " + location.MinimumLevelRequiredToEnter + " to enter this location.");
+                return;
+            }
+
             // The player can enter this location
             CurrentLocation = location;
 
@@ -377,6 +383,15 @@ namespace Engine
             return Inventory.Any(ii => ii.Details.ID == location.ItemRequiredToEnter.ID);
         }
 
+        private bool HasRequiredLevelToEnterThisLocation(Location location)
+        {
+            if (location.MinimumLevelRequiredToEnter <= Level)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private void SetTheCurrentMonsterForTheCurrentLocation(Location location)
         {
             // Populate the current monster with this location's monster (or null, if there is no monster here)
@@ -391,6 +406,11 @@ namespace Engine
         private bool PlayerDoesNotHaveTheRequiredItemToEnter(Location location)
         {
             return !HasRequiredItemToEnterThisLocation(location);
+        }
+
+        private bool PlayerDoesNotHaveRequiredLevelToEnter(Location location)
+        {
+            return !HasRequiredLevelToEnterThisLocation(location);
         }
 
         private bool PlayerDoesNotHaveThisQuest(Quest quest)

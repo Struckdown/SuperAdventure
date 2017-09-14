@@ -210,6 +210,12 @@ namespace SuperAdventure
             // Get the currently selected potion from the combobox
             HealingPotion potion = (HealingPotion)cboPotions.SelectedItem;
 
+            if(potion.MinLevel > _player.Level)
+            {
+                _player.RaiseMessage("You can't drink this potion.");
+                _player.RaiseMessage("You need to be level " + potion.MinLevel + ".");
+                return;
+            }
             _player.UsePotion(potion);
         }
 
