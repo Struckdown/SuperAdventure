@@ -191,10 +191,18 @@ namespace SuperAdventure
 
         private void btnUseWeapon_Click(object sender, EventArgs e)
         {
-            // Get the currently selected weapon from the cboWeapons ComboBox
+            // Get the currently selected weapon from the cboWeapons 
             Weapon currentWeapon = (Weapon)cboWeapons.SelectedItem;
 
-            _player.UseWeapon(currentWeapon);
+            if (currentWeapon.MinLevel > _player.Level)
+            {
+                _player.RaiseMessage("You can't use this weapon.");
+                _player.RaiseMessage("You need to be level " + currentWeapon.MinLevel + ".");
+            }
+            else
+            {
+                _player.UseWeapon(currentWeapon);
+            }
         }
 
         private void btnUsePotion_Click(object sender, EventArgs e)

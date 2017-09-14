@@ -546,7 +546,7 @@ namespace Engine
             }
         }
 
-        private void RaiseMessage(string message, bool addExtraNewLine = false)
+        public void RaiseMessage(string message, bool addExtraNewLine = false)
         {
             if (OnMessage != null)
             {
