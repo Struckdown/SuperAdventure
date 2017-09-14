@@ -10,3 +10,16 @@ c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\SuperAdventu
 c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\SuperAdventure\bin\Debug\Engine.dll
 c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\SuperAdventure\bin\Debug\Engine.pdb
 C:\Users\Boris\documents\visual studio 2015\Projects\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe.config
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.exe
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\bin\Debug\Engine.dll
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\bin\Debug\Engine.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.Properties.Resources.resources
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.SuperAdventure.resources
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.csproj.CoreCompileInputs.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.pdb

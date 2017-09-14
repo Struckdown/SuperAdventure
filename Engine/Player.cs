@@ -486,7 +486,12 @@ namespace Engine
         private void LetTheMonsterAttack()
         {
             int damageToPlayer = RandomNumberGenerator.NumberBetween(0, CurrentMonster.MaximumDamage);
-
+            int roll = RandomNumberGenerator.NumberBetween(1, 100);
+            if(roll <= missChance || damageToPlayer == 0)
+            {
+                RaiseMessage("The " + CurrentMonster.Name + " missed you.");
+                return;
+            }
             RaiseMessage("The " + CurrentMonster.Name + " did " + damageToPlayer + " points of damage.");
 
             CurrentHitPoints -= damageToPlayer;

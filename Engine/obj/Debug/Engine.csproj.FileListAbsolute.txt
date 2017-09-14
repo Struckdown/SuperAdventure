@@ -3,3 +3,9 @@ c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\bin\D
 c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\obj\Debug\Engine.dll
 c:\users\boris\documents\visual studio 2015\Projects\SuperAdventure\Engine\obj\Debug\Engine.pdb
 C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\bin\Debug\Engine.dll
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\bin\Debug\Engine.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\obj\Debug\Engine.dll
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\Engine\obj\Debug\Engine.pdb
