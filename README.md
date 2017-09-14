@@ -13,3 +13,5 @@ I'm hoping to expand the project when I finished it and primarily just add more 
 just for the fun of it. I think it'd be fun to make a 5-10 minute adventure game.
 
 Feel free to try it, hopefully it works for you!
+
+On a side note, in regards to licenses and such, this is a personal project done for practice and fun. I accept that the foundations of the code stem from the tutorial and will hopefully be eventually modified over time. 
