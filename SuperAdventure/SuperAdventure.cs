@@ -19,9 +19,14 @@ namespace SuperAdventure
 
         private Player _player;
 
-        public SuperAdventure()
+        public SuperAdventure(bool newGameStarted)
         {
             InitializeComponent();
+
+            if (newGameStarted)
+            {
+                File.Delete(PLAYER_DATA_FILE_NAME);
+            }
 
             if (File.Exists(PLAYER_DATA_FILE_NAME))
             {
