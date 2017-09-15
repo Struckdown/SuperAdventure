@@ -25,7 +25,14 @@ namespace SuperAdventure
 
             if (newGameStarted)
             {
-                File.Delete(PLAYER_DATA_FILE_NAME);
+                try
+                {
+                    File.Delete(PLAYER_DATA_FILE_NAME);
+                }
+                catch
+                {
+                    //do nothing to avoid error
+                }
             }
 
             if (File.Exists(PLAYER_DATA_FILE_NAME))

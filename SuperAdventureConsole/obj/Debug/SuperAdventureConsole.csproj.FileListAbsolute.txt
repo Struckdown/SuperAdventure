@@ -6,3 +6,12 @@ C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventu
 C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
 C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
 C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.exe.config
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.exe
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\bin\Debug\SuperAdventureConsole.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\bin\Debug\Engine.dll
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\bin\Debug\Engine.pdb
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csprojResolveAssemblyReference.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.csproj.CoreCompileInputs.cache
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.exe
+C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventureConsole\obj\Debug\SuperAdventureConsole.pdb

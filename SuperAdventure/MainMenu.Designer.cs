@@ -35,7 +35,7 @@
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(80, 115);
+            this.btnNewGame.Location = new System.Drawing.Point(151, 97);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(110, 23);
             this.btnNewGame.TabIndex = 0;
@@ -45,9 +45,9 @@
             // 
             // btnLoadGame
             // 
-            this.btnLoadGame.Location = new System.Drawing.Point(85, 162);
+            this.btnLoadGame.Location = new System.Drawing.Point(151, 146);
             this.btnLoadGame.Name = "btnLoadGame";
-            this.btnLoadGame.Size = new System.Drawing.Size(105, 23);
+            this.btnLoadGame.Size = new System.Drawing.Size(110, 23);
             this.btnLoadGame.TabIndex = 1;
             this.btnLoadGame.Text = "Load Game";
             this.btnLoadGame.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             // 
             this.lblSuperAdventure.AutoSize = true;
             this.lblSuperAdventure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSuperAdventure.Location = new System.Drawing.Point(59, 49);
+            this.lblSuperAdventure.Location = new System.Drawing.Point(126, 47);
             this.lblSuperAdventure.Name = "lblSuperAdventure";
             this.lblSuperAdventure.Size = new System.Drawing.Size(155, 25);
             this.lblSuperAdventure.TabIndex = 2;
@@ -67,12 +67,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(429, 253);
             this.Controls.Add(this.lblSuperAdventure);
             this.Controls.Add(this.btnLoadGame);
             this.Controls.Add(this.btnNewGame);
             this.Name = "MainMenu";
-            this.Text = "MainMenu";
+            this.Text = "SuperAdventure";
             this.ResumeLayout(false);
             this.PerformLayout();
 
