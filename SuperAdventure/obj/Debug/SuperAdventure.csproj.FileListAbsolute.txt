@@ -24,3 +24,4 @@ C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug
 C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.exe
 C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.pdb
 C:\Users\bfley\OneDrive\Documents\GitHub\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.MainMenu.resources
+C:\Users\Boris\Documents\Visual Studio 2015\Projects\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.MainMenu.resources
