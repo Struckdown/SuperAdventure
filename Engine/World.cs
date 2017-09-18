@@ -22,6 +22,7 @@ namespace Engine
         public const int ITEM_ID_SPIDER_FANG = 8;
         public const int ITEM_ID_SPIDER_SILK = 9;
         public const int ITEM_ID_ADVENTURER_PASS = 10;
+        public const int ITEM_ID_GREATER_HEALING_POTION = 11;
 
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
@@ -60,6 +61,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
             _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
             _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
+            _items.Add(new HealingPotion(ITEM_ID_GREATER_HEALING_POTION, "Greater Healing potion", "Greater Healing potions", 15, 25, 3));
         }
 
         private static void PopulateMonsters()
@@ -127,6 +129,7 @@ namespace Engine
 
             Vendor venessaTheAlchemist = new Vendor("Venessa the Alchemist");
             venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_HEALING_POTION), 5);
+            venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_GREATER_HEALING_POTION), 1);
             venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_SNAKESKIN), 3);
 
             alchemistHut.VendorWorkingHere = venessaTheAlchemist;

@@ -52,6 +52,7 @@ namespace Engine
         }
 
         public Weapon CurrentWeapon { get; set; }
+        public Item CurrentItem { get; set; }
 
         public BindingList<InventoryItem> Inventory { get; set; }
 
@@ -527,6 +528,7 @@ namespace Engine
         private void HealPlayer(int hitPointsToHeal)
         {
             CurrentHitPoints = Math.Min(CurrentHitPoints + hitPointsToHeal, MaximumHitPoints);
+            RaiseMessage("You restore " + hitPointsToHeal + " points of damage.");
         }
 
         private void CompletelyHeal()

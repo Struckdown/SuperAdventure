@@ -240,5 +240,10 @@ namespace SuperAdventure
         {
             _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
         }
+
+        private void cboPotions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _player.CurrentItem = (Item)cboPotions.SelectedItem;
+        }
     }
 }
