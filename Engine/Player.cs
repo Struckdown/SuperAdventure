@@ -52,7 +52,7 @@ namespace Engine
         }
 
         public Weapon CurrentWeapon { get; set; }
-        public Item CurrentItem { get; set; }
+        public SecondaryItem CurrentSecondaryItem { get; set; }
 
         public BindingList<InventoryItem> Inventory { get; set; }
 
@@ -61,9 +61,9 @@ namespace Engine
             get { return Inventory.Where(x => x.Details is Weapon).Select(x => x.Details as Weapon).ToList(); }
         }
 
-        public List<HealingPotion> Potions
+        public List<SecondaryItem> SecondaryItem
         {
-            get { return Inventory.Where(x => x.Details is HealingPotion).Select(x => x.Details as HealingPotion).ToList(); }
+            get { return Inventory.Where(x => x.Details is SecondaryItem).Select(x => x.Details as SecondaryItem).ToList(); }
         }
 
         public BindingList<PlayerQuest> Quests { get; set; }
@@ -562,9 +562,9 @@ namespace Engine
                 OnPropertyChanged("Weapons");
             }
 
-            if (item is HealingPotion)
+            if (item is SecondaryItem)
             {
-                OnPropertyChanged("Potions");
+                OnPropertyChanged("SecondaryItem");
             }
         }
 

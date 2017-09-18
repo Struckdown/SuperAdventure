@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class HealingPotion: Item
+    public class HealingPotion: SecondaryItem
     {
         public int AmountToHeal { get; set; }
 

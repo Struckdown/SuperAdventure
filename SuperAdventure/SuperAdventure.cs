@@ -96,9 +96,9 @@ namespace SuperAdventure
 
             cboWeapons.SelectedIndexChanged += cboWeapons_SelectedIndexChanged;
 
-            cboPotions.DataSource = _player.Potions;
-            cboPotions.DisplayMember = "Name";
-            cboPotions.ValueMember = "Id";
+            cboSecondaryItem.DataSource = _player.SecondaryItem;
+            cboSecondaryItem.DisplayMember = "Name";
+            cboSecondaryItem.ValueMember = "Id";
 
             _player.PropertyChanged += PlayerOnPropertyChanged;
             _player.OnMessage += DisplayMessage;
@@ -132,13 +132,13 @@ namespace SuperAdventure
                 }
             }
 
-            if (propertyChangedEventArgs.PropertyName == "Potions")
+            if (propertyChangedEventArgs.PropertyName == "SecondaryItem")
             {
-                cboPotions.DataSource = _player.Potions;
+                cboSecondaryItem.DataSource = _player.SecondaryItem;
 
-                if (!_player.Potions.Any())
+                if (!_player.SecondaryItem.Any())
                 {
-                    cboPotions.Visible = false;
+                    cboSecondaryItem.Visible = false;
                     btnUsePotion.Visible = false;
                 }
             }
@@ -159,16 +159,16 @@ namespace SuperAdventure
                 if (!_player.CurrentLocation.HasAMonster)
                 {
                     cboWeapons.Visible = false;
-                    cboPotions.Visible = false;
+                    cboSecondaryItem.Visible = false;
                     btnUseWeapon.Visible = false;
                     btnUsePotion.Visible = false;
                 }
                 else
                 {
                     cboWeapons.Visible = _player.Weapons.Any();
-                    cboPotions.Visible = _player.Potions.Any();
+                    cboSecondaryItem.Visible = _player.SecondaryItem.Any();
                     btnUseWeapon.Visible = _player.Weapons.Any();
-                    btnUsePotion.Visible = _player.Potions.Any();
+                    btnUsePotion.Visible = _player.SecondaryItem.Any();
                 }
             }
         }
@@ -220,7 +220,7 @@ namespace SuperAdventure
         private void btnUsePotion_Click(object sender, EventArgs e)
         {
             // Get the currently selected potion from the combobox
-            HealingPotion potion = (HealingPotion)cboPotions.SelectedItem;
+            HealingPotion potion = (HealingPotion)cboSecondaryItem.SelectedItem;
 
             if(potion.MinLevel > _player.Level)
             {
@@ -241,9 +241,9 @@ namespace SuperAdventure
             _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
         }
 
-        private void cboPotions_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboSecondaryItem_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _player.CurrentItem = (Item)cboPotions.SelectedItem;
+            _player.CurrentSecondaryItem = (SecondaryItem)cboSecondaryItem.SelectedItem;
         }
     }
 }
