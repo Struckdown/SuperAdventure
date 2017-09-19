@@ -23,6 +23,7 @@ namespace Engine
         public const int ITEM_ID_SPIDER_SILK = 9;
         public const int ITEM_ID_ADVENTURER_PASS = 10;
         public const int ITEM_ID_GREATER_HEALING_POTION = 11;
+        public const int ITEM_ID_SCROLL_MINOR_FIREBALL = 12;
 
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
@@ -62,6 +63,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
             _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
             _items.Add(new HealingPotion(ITEM_ID_GREATER_HEALING_POTION, "Greater Healing potion", "Greater Healing potions", 15, 25, 3));
+            _items.Add(new DamageMagicScroll(ITEM_ID_SCROLL_MINOR_FIREBALL, "Scroll of Minor Fireball", "Scrolls of Minor Fireball", 1, 1, 5, 10));
         }
 
         private static void PopulateMonsters()
@@ -131,6 +133,7 @@ namespace Engine
             venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_HEALING_POTION), 5);
             venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_GREATER_HEALING_POTION), 1);
             venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_SNAKESKIN), 3);
+            venessaTheAlchemist.AddItemToInventory(ItemByID(ITEM_ID_SCROLL_MINOR_FIREBALL), 1);
 
             alchemistHut.VendorWorkingHere = venessaTheAlchemist;
 

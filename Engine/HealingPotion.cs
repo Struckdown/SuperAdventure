@@ -12,6 +12,7 @@ namespace Engine
 
         public HealingPotion(int id, string name, string namePlural, int minLevel, int amountToHeal, int price) : base(id, name, namePlural, minLevel, price)
         {
+            isPotion = true;
             AmountToHeal = amountToHeal;
         }
     }

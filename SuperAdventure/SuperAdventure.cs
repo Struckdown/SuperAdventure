@@ -139,7 +139,7 @@ namespace SuperAdventure
                 if (!_player.SecondaryItem.Any())
                 {
                     cboSecondaryItem.Visible = false;
-                    btnUsePotion.Visible = false;
+                    btnUseSecondaryItem.Visible = false;
                 }
             }
 
@@ -161,14 +161,14 @@ namespace SuperAdventure
                     cboWeapons.Visible = false;
                     cboSecondaryItem.Visible = false;
                     btnUseWeapon.Visible = false;
-                    btnUsePotion.Visible = false;
+                    btnUseSecondaryItem.Visible = false;
                 }
                 else
                 {
                     cboWeapons.Visible = _player.Weapons.Any();
                     cboSecondaryItem.Visible = _player.SecondaryItem.Any();
                     btnUseWeapon.Visible = _player.Weapons.Any();
-                    btnUsePotion.Visible = _player.SecondaryItem.Any();
+                    btnUseSecondaryItem.Visible = _player.SecondaryItem.Any();
                 }
             }
         }
@@ -219,16 +219,41 @@ namespace SuperAdventure
 
         private void btnUsePotion_Click(object sender, EventArgs e)
         {
-            // Get the currently selected potion from the combobox
-            HealingPotion potion = (HealingPotion)cboSecondaryItem.SelectedItem;
+            //TODO check if potion or damage scroll or what
+            SecondaryItem secondaryItem = ((SecondaryItem)cboSecondaryItem.SelectedItem);
 
-            if(potion.MinLevel > _player.Level)
+            if(secondaryItem.isPotion == true)
             {
-                _player.RaiseMessage("You can't drink this potion.");
-                _player.RaiseMessage("You need to be level " + potion.MinLevel + ".");
-                return;
+                // Get the currently selected potion from the combobox
+                HealingPotion potion = (HealingPotion)cboSecondaryItem.SelectedItem;
+
+                if(potion.MinLevel > _player.Level)
+                {
+                    _player.RaiseMessage("You can't drink this potion.");
+                    _player.RaiseMessage("You need to be level " + potion.MinLevel + ".");
+                    return;
+                }
+                _player.UsePotion(potion);
             }
-            _player.UsePotion(potion);
+            else if (secondaryItem.isMagic == true)
+            {
+                DamageMagicScroll scroll = (DamageMagicScroll)secondaryItem;
+
+                if (scroll.MinLevel > _player.Level)
+                {
+                    _player.RaiseMessage("You can't cast this spell.");
+                    _player.RaiseMessage("You need to be level " + scroll.MinLevel + ".");
+                    return;
+                }
+                _player.UseScroll(scroll);
+            }
+
+            else
+            {
+                _player.RaiseMessage("Bug: This item isn't an item type at all!");
+            }
+
+
         }
 
         private void SuperAdventure_FormClosing(object sender, FormClosingEventArgs e)

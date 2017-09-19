@@ -8,6 +8,8 @@ namespace Engine
 {
     public class SecondaryItem: Item
     {
+        public bool isPotion;
+        public bool isMagic;
         public SecondaryItem(int id, string name, string namePlural, int minLevel, int price) : base(id, name, namePlural, minLevel, price)
         {
         }

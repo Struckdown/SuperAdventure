@@ -40,7 +40,7 @@
             this.cboWeapons = new System.Windows.Forms.ComboBox();
             this.cboSecondaryItem = new System.Windows.Forms.ComboBox();
             this.btnUseWeapon = new System.Windows.Forms.Button();
-            this.btnUsePotion = new System.Windows.Forms.Button();
+            this.btnUseSecondaryItem = new System.Windows.Forms.Button();
             this.btnNorth = new System.Windows.Forms.Button();
             this.btnEast = new System.Windows.Forms.Button();
             this.btnSouth = new System.Windows.Forms.Button();
@@ -173,14 +173,14 @@
             // 
             // btnUsePotion
             // 
-            this.btnUsePotion.Location = new System.Drawing.Point(827, 730);
-            this.btnUsePotion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnUsePotion.Name = "btnUsePotion";
-            this.btnUsePotion.Size = new System.Drawing.Size(100, 28);
-            this.btnUsePotion.TabIndex = 12;
-            this.btnUsePotion.Text = "Use";
-            this.btnUsePotion.UseVisualStyleBackColor = true;
-            this.btnUsePotion.Click += new System.EventHandler(this.btnUsePotion_Click);
+            this.btnUseSecondaryItem.Location = new System.Drawing.Point(827, 730);
+            this.btnUseSecondaryItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUseSecondaryItem.Name = "btnUsePotion";
+            this.btnUseSecondaryItem.Size = new System.Drawing.Size(100, 28);
+            this.btnUseSecondaryItem.TabIndex = 12;
+            this.btnUseSecondaryItem.Text = "Use";
+            this.btnUseSecondaryItem.UseVisualStyleBackColor = true;
+            this.btnUseSecondaryItem.Click += new System.EventHandler(this.btnUsePotion_Click);
             // 
             // btnNorth
             // 
@@ -305,7 +305,7 @@
             this.Controls.Add(this.btnSouth);
             this.Controls.Add(this.btnEast);
             this.Controls.Add(this.btnNorth);
-            this.Controls.Add(this.btnUsePotion);
+            this.Controls.Add(this.btnUseSecondaryItem);
             this.Controls.Add(this.btnUseWeapon);
             this.Controls.Add(this.cboSecondaryItem);
             this.Controls.Add(this.cboWeapons);
@@ -343,7 +343,7 @@
         private System.Windows.Forms.ComboBox cboWeapons;
         private System.Windows.Forms.ComboBox cboSecondaryItem;
         private System.Windows.Forms.Button btnUseWeapon;
-        private System.Windows.Forms.Button btnUsePotion;
+        private System.Windows.Forms.Button btnUseSecondaryItem;
         private System.Windows.Forms.Button btnNorth;
         private System.Windows.Forms.Button btnEast;
         private System.Windows.Forms.Button btnSouth;

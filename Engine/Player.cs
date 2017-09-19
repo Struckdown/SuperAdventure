@@ -283,6 +283,28 @@ namespace Engine
             LetTheMonsterAttack();
         }
 
+        public void UseScroll(DamageMagicScroll scroll)
+        {
+            RaiseMessage("You cast " + scroll.Name + "!");
+
+            DamageMonster(scroll.MinDamageAmount, scroll.MaxDamageAmount);
+
+            RemoveItemFromInventory(scroll);
+
+            if (CurrentMonster.IsDead)
+            {
+                LootTheCurrentMonster();
+
+                // "Move" to the current location, to refresh the current monster
+                MoveTo(CurrentLocation);
+            }
+            else
+            {
+            // The player used their turn to cast a spell, so let the monster attack now
+            LetTheMonsterAttack();
+            }
+        }
+
         public void AddItemToInventory(Item itemToAdd, int quantity = 1)
         {
             InventoryItem existingItemInInventory = Inventory.SingleOrDefault(ii => ii.Details.ID == itemToAdd.ID);
@@ -529,6 +551,14 @@ namespace Engine
         {
             CurrentHitPoints = Math.Min(CurrentHitPoints + hitPointsToHeal, MaximumHitPoints);
             RaiseMessage("You restore " + hitPointsToHeal + " points of damage.");
+        }
+
+        private void DamageMonster(int min, int max)
+        {
+            int damage = RandomNumberGenerator.NumberBetween(min, max);
+            CurrentMonster.CurrentHitPoints = Math.Max(CurrentMonster.CurrentHitPoints - damage, 0);
+            RaiseMessage("You deal " + damage + " points of damage.");
+            
         }
 
         private void CompletelyHeal()
