@@ -10,7 +10,7 @@ namespace Engine
     {
         public bool isPotion;
         public bool isMagic;
-        public SecondaryItem(int id, string name, string namePlural, int minLevel, int price) : base(id, name, namePlural, minLevel, price)
+        public SecondaryItem(int id, string name, string namePlural, int price, int minLevel) : base(id, name, namePlural, price, minLevel)
         {
         }
     }

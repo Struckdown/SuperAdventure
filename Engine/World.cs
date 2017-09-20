@@ -58,12 +58,12 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 1));
             _items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins", 2));
             _items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 2, 3, 10, 8));
-            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 3, 8, 3));
+            _items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5, 2, 8));
             _items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs", 1));
             _items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks", 1));
             _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
-            _items.Add(new HealingPotion(ITEM_ID_GREATER_HEALING_POTION, "Greater Healing potion", "Greater Healing potions", 15, 25, 3));
-            _items.Add(new DamageMagicScroll(ITEM_ID_SCROLL_MINOR_FIREBALL, "Scroll of Minor Fireball", "Scrolls of Minor Fireball", 1, 1, 5, 10));
+            _items.Add(new HealingPotion(ITEM_ID_GREATER_HEALING_POTION, "Greater Healing potion", "Greater Healing potions", 15, 3, 25));
+            _items.Add(new DamageMagicScroll(ITEM_ID_SCROLL_MINOR_FIREBALL, "Scroll of Minor Fireball", "Scrolls of Minor Fireball", 2, 3, 5, 10));
         }
 
         private static void PopulateMonsters()
