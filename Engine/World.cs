@@ -90,12 +90,13 @@ namespace Engine
             Quest clearAlchemistGarden =
                 new Quest(
                     QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
-                    "Clear the alchemist's garden",
+                    "Clear the alchemist's garden (repeatable)",
                     "Kill rats in the alchemist's garden and bring back 3 rat tails. You will receive a healing potion and 10 gold pieces.", 20, 10);
 
             clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_RAT_TAIL), 3));
 
             clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
+            clearAlchemistGarden.IsRepeatable = true;
 
             Quest clearFarmersField =
                 new Quest(

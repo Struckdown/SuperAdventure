@@ -15,8 +15,9 @@ namespace Engine
         public int RewardGold { get; set; }
         public Item RewardItem { get; set; }
         public List<QuestCompletionItem> QuestCompletionItems { get; set; }
+        public bool IsRepeatable = false;
 
-        public Quest(int id, string name, string description, int rewardExperiencePoints, int rewardGold)
+        public Quest(int id, string name, string description, int rewardExperiencePoints, int rewardGold, bool isRepeatable = false)
         {
             ID = id;
             Name = name;
@@ -24,6 +25,7 @@ namespace Engine
             RewardExperiencePoints = rewardExperiencePoints;
             RewardGold = rewardGold;
             QuestCompletionItems = new List<QuestCompletionItem>();
+            IsRepeatable = isRepeatable;
         }
     }
 }

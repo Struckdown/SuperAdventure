@@ -520,7 +520,7 @@ namespace Engine
         {
             PlayerQuest playerQuest = Quests.SingleOrDefault(pq => pq.Details.ID == quest.ID);
 
-            if (playerQuest != null)
+            if (playerQuest != null && !quest.IsRepeatable)
             {
                 playerQuest.IsCompleted = true;
             }

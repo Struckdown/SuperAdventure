@@ -57,7 +57,7 @@ namespace SuperAdventure
             dgvInventory.Columns.Add(new DataGridViewTextBoxColumn
             {
                 HeaderText = "Name",
-                Width = 197,
+                Width = 209,
                 DataPropertyName = "Description"
             });
 
@@ -75,7 +75,7 @@ namespace SuperAdventure
             dgvQuests.Columns.Add(new DataGridViewTextBoxColumn
             {
                 HeaderText = "Name",
-                Width = 197,
+                Width = 209,
                 DataPropertyName = "Name"
             });
 
