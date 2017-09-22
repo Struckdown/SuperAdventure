@@ -28,6 +28,58 @@ namespace Engine
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
         public const int MONSTER_ID_GIANT_SPIDER = 3;
+        public const int MONSTER_ID_TROLL = 4;
+        public const int MONSTER_ID_GREEN_SLIME = 5;
+        public const int MONSTER_ID_SKELETON = 6;
+        public const int MONSTER_ID_WIZARD = 7;
+        public const int MONSTER_ID_ZOMBIE = 8;
+        public const int MONSTER_ID_GRUE = 9;
+        public const int MONSTER_ID_SHADOW = 10;
+        public const int MONSTER_ID_ANIMATED_ARMOR = 11;
+        public const int MONSTER_ID_FLYING_AXE = 12;
+        public const int MONSTER_ID_WISP = 13;
+        public const int MONSTER_ID_ENT = 14;
+        public const int MONSTER_ID_RABID_DOG = 15;
+        public const int MONSTER_ID_OGRE = 16;
+        public const int MONSTER_ID_GOBLIN = 17;
+        public const int MONSTER_ID_GREEN_DRAGON = 18;
+        public const int MONSTER_ID_DIRE_WOLF = 19;
+        public const int MONSTER_ID_DEATHKNIGHT = 20;
+        public const int MONSTER_ID_WRAITH = 21;
+        public const int MONSTER_ID_ORC = 22;
+        public const int MONSTER_ID_THIEF = 23;
+        public const int MONSTER_ID_SATYR = 24;
+        public const int MONSTER_ID_KOBOLD = 25;
+        public const int MONSTER_ID_BUGBEAR = 26;
+        public const int MONSTER_ID_SCARECROW = 27;
+        public const int MONSTER_ID_GIANT_MOTH = 28;
+        public const int MONSTER_ID_ANIMATED_BOOK = 29;
+        public const int MONSTER_ID_MUMMY = 30;
+        public const int MONSTER_ID_SCARAB = 31;
+        public const int MONSTER_ID_GIANT_WORM = 32;
+        public const int MONSTER_ID_DARK_ELF = 33;
+        public const int MONSTER_ID_IMP = 34;
+        public const int MONSTER_ID_HEADLESS_HORSEMAN = 35;
+        public const int MONSTER_ID_CENTAUR = 36;
+        public const int MONSTER_ID_WYVERN = 37;
+        public const int MONSTER_ID_ROC = 38;
+        public const int MONSTER_ID_MIMIC = 39;
+        public const int MONSTER_ID_NIGHTMARE = 40;
+        public const int MONSTER_ID_DJINN = 41;
+        public const int MONSTER_ID_LICH = 42;
+        public const int MONSTER_ID_WITCH = 43;
+        public const int MONSTER_ID_NECROMANCER = 44;
+        public const int MONSTER_ID_LIZARDMAN = 45;
+        public const int MONSTER_ID_FIRE_ELEMENTAL = 46;
+        public const int MONSTER_ID_GOLEM = 47; //more golems?
+        public const int MONSTER_ID_GNOME = 48;
+        public const int MONSTER_ID_PIXIE = 49;
+        public const int MONSTER_ID_DRYAD = 50;
+        public const int MONSTER_ID_HARPY = 51;
+        public const int MONSTER_ID_NAGA = 52;
+        public const int MONSTER_ID_NYMPH = 53;
+        public const int MONSTER_ID_NAIAD = 54; //double check spelling
+        public const int MONSTER_ID_DIRE_BEAR = 55;
 
         public const int QUEST_ID_CLEAR_ALCHEMIST_GARDEN = 1;
         public const int QUEST_ID_CLEAR_FARMERS_FIELD = 2;
@@ -137,9 +189,164 @@ namespace Engine
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
+            Monster troll = new Monster(MONSTER_ID_TROLL, "Troll", 30, 50, 40, 120, 120);
+
+            Monster greenSlime = new Monster(MONSTER_ID_GREEN_SLIME, "Green Slime", 3, 2, 2, 4, 4);
+
+            Monster skeleton = new Monster(MONSTER_ID_SKELETON, "Skeleton", 8, 12, 1, 14, 14);
+
+            Monster wizard = new Monster(MONSTER_ID_WIZARD, "Wizard", 40, 200, 50, 65, 65);
+
+            Monster zombie = new Monster(MONSTER_ID_ZOMBIE, "Zombie", 4, 6, 3, 18, 18);
+
+            Monster grue = new Monster(MONSTER_ID_GRUE, "The Grue", 30, 500, 200, 150, 150);
+
+            Monster shadow = new Monster(MONSTER_ID_SHADOW, "Shadow", 15, 10, 0, 4, 4);
+
+            Monster animatedArmor = new Monster(MONSTER_ID_ANIMATED_ARMOR, "Animated Armor", 7, 24, 18, 32, 32);
+
+            Monster flyingAxe = new Monster(MONSTER_ID_FLYING_AXE, "Flying Axe", 10, 12, 3, 3, 3);
+
+            Monster wisp = new Monster(MONSTER_ID_WISP, "Wisp", 4, 4, 5, 7, 7);
+
+            Monster ent = new Monster(MONSTER_ID_ENT, "Ent", 16, 65, 34, 48, 48);
+
+            Monster rabidDog = new Monster(MONSTER_ID_RABID_DOG, "Rabid Dog", 5, 6, 2, 8, 8);
+
+            Monster ogre = new Monster(MONSTER_ID_OGRE, "Ogre", 24, 20, 35, 38, 38);
+
+            Monster goblin = new Monster(MONSTER_ID_GOBLIN, "Goblin", 6, 5, 7, 6, 6);
+
+            Monster greenDragon = new Monster(MONSTER_ID_GREEN_DRAGON, "Green Dragon", 80, 500, 1000, 350, 350);
+
+            Monster direWolf = new Monster(MONSTER_ID_DIRE_WOLF, "Dire Wolf", 16, 27, 15, 25, 25);
+
+            Monster deathKnight = new Monster(MONSTER_ID_DEATHKNIGHT, "Death Knight", 50, 250, 200, 200, 200);
+
+            Monster wraith = new Monster(MONSTER_ID_WRAITH, "Wraith", 13, 33, 19, 21, 21);
+
+            Monster orc = new Monster(MONSTER_ID_ORC, "Orc", 10, 20, 20, 16, 16);
+
+            Monster thief = new Monster(MONSTER_ID_THIEF, "Thief", 6, 11, 23, 11, 11);
+
+            Monster satyr = new Monster(MONSTER_ID_SATYR, "Satyr", 24, 28, 18, 33, 33);
+
+            Monster kobold = new Monster(MONSTER_ID_KOBOLD, "Kobold", 5, 4, 4, 7, 7);
+
+            Monster bugBear = new Monster(MONSTER_ID_BUGBEAR, "Bugbear", 12, 22, 16, 19, 19);
+
+            Monster scarecrow = new Monster(MONSTER_ID_SCARECROW, "Scarecrow", 9, 15, 8, 14, 14);
+
+            Monster giantMoth = new Monster(MONSTER_ID_GIANT_MOTH, "Giant Moth", 24, 38, 15, 57, 57);
+
+            Monster animatedBook = new Monster(MONSTER_ID_ANIMATED_BOOK, "Animated Book", 2, 1, 3, 3, 3);
+
+            Monster mummy = new Monster(MONSTER_ID_MUMMY, "Mummy", 14, 18, 4, 23, 23);
+
+            Monster scarab = new Monster(MONSTER_ID_SCARAB, "Scarab", 9, 6, 6, 14, 14);
+
+            Monster giantWorm = new Monster(MONSTER_ID_GIANT_WORM, "Giant Worm", 35, 70, 45, 78, 78);
+
+            Monster darkElf = new Monster(MONSTER_ID_DARK_ELF, "Dark Elf", 24, 40, 34, 29, 29);
+
+            Monster imp = new Monster(MONSTER_ID_IMP, "Imp", 8, 10, 13, 14, 14);
+
+            Monster headlessHorseman = new Monster(MONSTER_ID_HEADLESS_HORSEMAN, "Headless Horseman", 40, 200, 320, 160, 160);
+
+            Monster centaur = new Monster(MONSTER_ID_CENTAUR, "Centaur", 22, 45, 28, 35, 35);
+
+            Monster wyvern = new Monster(MONSTER_ID_WYVERN, "Wyvern", 45, 200, 180, 150, 150);
+
+            Monster roc = new Monster(MONSTER_ID_ROC, "Roc", 48, 175, 198, 178, 178);
+
+            Monster mimic = new Monster(MONSTER_ID_MIMIC, "Mimic", 22, 10, 130, 35, 35);
+
+            Monster nightmare = new Monster(MONSTER_ID_NIGHTMARE, "Nightmare", 25, 80, 60, 75, 75);
+
+            Monster djinn = new Monster(MONSTER_ID_NIGHTMARE, "Djinn", 33, 130, 88, 72, 72);
+
+            Monster lich = new Monster(MONSTER_ID_LICH, "Lich", 125, 1000, 750, 180, 180);
+
+            Monster witch = new Monster(MONSTER_ID_WITCH, "Witch", 22, 40, 35, 37, 37);
+
+            Monster necromancer = new Monster(MONSTER_ID_WITCH, "Necromancer", 25, 35, 60, 34, 34);
+
+            Monster lizardman = new Monster(MONSTER_ID_LIZARDMAN, "Lizardman", 20, 35, 57, 16, 16);
+
+            Monster fireElemental = new Monster(MONSTER_ID_FIRE_ELEMENTAL, "Fire Elemental", 38, 70, 25, 65, 65);
+
+            Monster golem = new Monster(MONSTER_ID_GOLEM, "Golem", 50, 100, 79, 86, 86);
+
+            Monster gnome = new Monster(MONSTER_ID_GNOME, "Gnome", 7, 12, 9, 8, 8);
+
+            Monster pixie = new Monster(MONSTER_ID_PIXIE, "Pixie", 4, 2, 4, 3, 3);
+
+            Monster dryad = new Monster(MONSTER_ID_DRYAD, "Dryad", 12, 18, 16, 23, 23);
+
+            Monster harpy = new Monster(MONSTER_ID_HARPY, "Harpy", 15, 34, 22, 19, 19);
+
+            Monster naga = new Monster(MONSTER_ID_NAGA, "Naga", 14, 28, 23, 20, 20);
+
+            Monster nymph = new Monster(MONSTER_ID_NYMPH, "Nymph", 9, 20, 17, 22, 22);
+
+            Monster naiad = new Monster(MONSTER_ID_NAIAD, "Naiad", 12, 25, 16, 26, 26);
+
+            Monster direbear = new Monster(MONSTER_ID_DIRE_BEAR, "Direbear", 25, 48, 61, 72, 72);
+
             _monsters.Add(rat);
             _monsters.Add(snake);
             _monsters.Add(giantSpider);
+            _monsters.Add(greenSlime);
+            _monsters.Add(skeleton);
+            _monsters.Add(wizard);
+            _monsters.Add(zombie);
+            _monsters.Add(grue);
+            _monsters.Add(shadow);
+            _monsters.Add(animatedArmor);
+            _monsters.Add(flyingAxe);
+            _monsters.Add(wisp);
+            _monsters.Add(ent);
+            _monsters.Add(rabidDog);
+            _monsters.Add(ogre);
+            _monsters.Add(goblin);
+            _monsters.Add(greenDragon);
+            _monsters.Add(direWolf);
+            _monsters.Add(deathKnight);
+            _monsters.Add(wraith);
+            _monsters.Add(orc);
+            _monsters.Add(thief);
+            _monsters.Add(satyr);
+            _monsters.Add(kobold);
+            _monsters.Add(bugBear);
+            _monsters.Add(scarecrow);
+            _monsters.Add(giantMoth);
+            _monsters.Add(animatedBook);
+            _monsters.Add(mummy);
+            _monsters.Add(scarab);
+            _monsters.Add(giantWorm);
+            _monsters.Add(darkElf);
+            _monsters.Add(imp);
+            _monsters.Add(headlessHorseman);
+            _monsters.Add(centaur);
+            _monsters.Add(wyvern);
+            _monsters.Add(roc);
+            _monsters.Add(mimic);
+            _monsters.Add(nightmare);
+            _monsters.Add(djinn);
+            _monsters.Add(lich);
+            _monsters.Add(witch);
+            _monsters.Add(necromancer);
+            _monsters.Add(lizardman);
+            _monsters.Add(fireElemental);
+            _monsters.Add(golem);
+            _monsters.Add(gnome);
+            _monsters.Add(pixie);
+            _monsters.Add(dryad);
+            _monsters.Add(harpy);
+            _monsters.Add(naga);
+            _monsters.Add(nymph);
+            _monsters.Add(naiad);
+            _monsters.Add(direbear);
         }
 
         private static void PopulateQuests()
@@ -379,8 +586,8 @@ namespace Engine
                 " wall, seemingly drawing you in.");
 
 
-            Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.");
-            spiderField.AddMonster(MONSTER_ID_GIANT_SPIDER, 100);
+            //Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.");
+            //spiderField.AddMonster(MONSTER_ID_GIANT_SPIDER, 100);
 
             // Link the locations together
             home.LocationToNorth = townSquare;
