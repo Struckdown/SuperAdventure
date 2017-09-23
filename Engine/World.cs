@@ -263,13 +263,13 @@ namespace Engine
 
             Monster nightmare = new Monster(MONSTER_ID_NIGHTMARE, "Nightmare", 25, 80, 60, 75, 75);
 
-            Monster djinn = new Monster(MONSTER_ID_NIGHTMARE, "Djinn", 33, 130, 88, 72, 72);
+            Monster djinn = new Monster(MONSTER_ID_DJINN, "Djinn", 33, 130, 88, 72, 72);
 
             Monster lich = new Monster(MONSTER_ID_LICH, "Lich", 125, 1000, 750, 180, 180);
 
             Monster witch = new Monster(MONSTER_ID_WITCH, "Witch", 22, 40, 35, 37, 37);
 
-            Monster necromancer = new Monster(MONSTER_ID_WITCH, "Necromancer", 25, 35, 60, 34, 34);
+            Monster necromancer = new Monster(MONSTER_ID_NECROMANCER, "Necromancer", 25, 35, 60, 34, 34);
 
             Monster lizardman = new Monster(MONSTER_ID_LIZARDMAN, "Lizardman", 20, 35, 57, 16, 16);
 
@@ -297,6 +297,7 @@ namespace Engine
             _monsters.Add(snake);
             _monsters.Add(giantSpider);
             _monsters.Add(greenSlime);
+            _monsters.Add(troll);
             _monsters.Add(skeleton);
             _monsters.Add(wizard);
             _monsters.Add(zombie);
@@ -393,11 +394,14 @@ namespace Engine
 
             Location sideRoad = new Location(LOCATION_ID_SIDE_ROAD, "Side Road", "A small side road that leads to the market district" +
                 "to the north.");
+            sideRoad.AddMonster(MONSTER_ID_GREEN_SLIME, 30);
+            sideRoad.AddMonster(MONSTER_ID_RABID_DOG, 70);
 
             Location marketDistrict = new Location(LOCATION_ID_MARKET_DISTRICT, "Market District", "The place is bustling with activity." +
                 "People are running around everywhere carrying various goods. You can see the General Store to the north.");
 
             Location deadEnd = new Location(LOCATION_ID_DEAD_END, "Dead End", "The road ends here.");
+            deadEnd.AddMonster(MONSTER_ID_KOBOLD, 100);
 
             Location generalStore = new Location(LOCATION_ID_GENERAL_STORE, "General Store", "The General Store has many goods but most" +
                 "of them do not pertain to adventuring unfortunately.");
@@ -415,30 +419,56 @@ namespace Engine
             Location largeHill = new Location(LOCATION_ID_LARGE_HILL, "Large Hill", "Atop the hill, you can see the town to the " +
                 "south of you, as well as a large tower to the west. To the north is a large cliff and to the north east you can " +
                 "see a massive mountain. A small pond can be seen to the east.");
+            largeHill.AddMonster(MONSTER_ID_OGRE, 50);
+            largeHill.AddMonster(MONSTER_ID_GNOME, 20);
+            largeHill.AddMonster(MONSTER_ID_KOBOLD, 30);
 
             Location cliff = new Location(LOCATION_ID_CLIFF, "Cliff", "You can see a small field of dirt and mud beneath you. You " +
                 "might be able to climb down safetly but you won't be able to get back up this way.");
+            cliff.AddMonster(MONSTER_ID_HARPY, 90);
+            cliff.AddMonster(MONSTER_ID_WYVERN, 10);
 
             Location rollingHills = new Location(LOCATION_ID_ROLLING_HILLS, "Rolling Hills", "The hills are numerous as you go up " +
                 "and down constantly.");
+            rollingHills.AddMonster(MONSTER_ID_THIEF, 40);
+            rollingHills.AddMonster(MONSTER_ID_CENTAUR, 30);
+            rollingHills.AddMonster(MONSTER_ID_GOBLIN, 30);
 
             Location peacefulPond = new Location(LOCATION_ID_PEACEFUL_POND, "Peaceful Pond", "There is a calm pond. The waters are " +
                 "particularly still.");
 
             Location collosalCaveEntrance= new Location(LOCATION_ID_COLLISAL_CAVE_ENTRANCE, "Collisal Cave Entrance", "You see the " +
                 "entrance to a collisal cave.");
+            collosalCaveEntrance.AddMonster(MONSTER_ID_DIRE_BEAR, 40);
+            collosalCaveEntrance.AddMonster(MONSTER_ID_DIRE_WOLF, 40);
+            collosalCaveEntrance.AddMonster(MONSTER_ID_GRUE, 10);
+            collosalCaveEntrance.AddMonster(MONSTER_ID_BUGBEAR, 20);
 
             Location trifoxTrail = new Location(LOCATION_ID_TRIFOX_TRAIL, "Trifox Trail", "The path splits in three directions. " +
                 "To the north, you can see a forest. To the west is a river. And to the east is the town.");
+            trifoxTrail.AddMonster(MONSTER_ID_GOBLIN, 30);
+            trifoxTrail.AddMonster(MONSTER_ID_ORC, 40);
+            trifoxTrail.AddMonster(MONSTER_ID_BUGBEAR, 30);
 
             Location easternTrail = new Location(LOCATION_ID_EASTERN_TRAIL, "Eastern Trail", "The path continues to the east with " +
                 "a small branch to the south.");
+            easternTrail.AddMonster(MONSTER_ID_ORC, 30);
+            easternTrail.AddMonster(MONSTER_ID_THIEF, 70);
 
             Location brokenPass = new Location(LOCATION_ID_BROKEN_PASS, "Broken Pass", "The pass is sandwiched between two large " +
                 "mountains. The sun is barely visible and it is quite dark.");
+            brokenPass.AddMonster(MONSTER_ID_SHADOW, 20);
+            brokenPass.AddMonster(MONSTER_ID_LIZARDMAN, 30);
+            brokenPass.AddMonster(MONSTER_ID_FIRE_ELEMENTAL, 20);
+            brokenPass.AddMonster(MONSTER_ID_DARK_ELF, 30);
 
             Location desertEntrance = new Location(LOCATION_ID_DESERT_ENTRANCE, "Desert Entrance", "The vast expanse of the desert" +
                 " can be seen in front of you. The sweltering sun beats on your back.");
+            desertEntrance.AddMonster(MONSTER_ID_GIANT_WORM, 20);
+            desertEntrance.AddMonster(MONSTER_ID_GOLEM, 20);
+            desertEntrance.AddMonster(MONSTER_ID_SCARAB, 30);
+            desertEntrance.AddMonster(MONSTER_ID_SKELETON, 10);
+            desertEntrance.AddMonster(MONSTER_ID_MUMMY, 20);
 
             Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves. " +
                 "Venessa smiles at you and offers you to browse her goods.");
@@ -459,8 +489,9 @@ namespace Engine
             farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
 
             Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.", null, 3);
-            farmersField.AddMonster(MONSTER_ID_SNAKE, 75);
-            farmersField.AddMonster(MONSTER_ID_RAT, 25);
+            farmersField.AddMonster(MONSTER_ID_SNAKE, 60);
+            farmersField.AddMonster(MONSTER_ID_RAT, 20);
+            farmersField.AddMonster(MONSTER_ID_SCARECROW, 20);
 
             Location eastGuardPost = new Location(LOCATION_ID_WEST_GUARD_POST, "Guard Post", "There is a large, tough-looking guard here."
                 , ItemByID(ITEM_ID_RUSTY_SWORD));
@@ -468,37 +499,71 @@ namespace Engine
             Location westGuardPost = new Location(LOCATION_ID_EAST_GUARD_POST, "Guard Post", "A large guard greets you and lets you pass.");
 
             Location mudfield = new Location(LOCATION_ID_MUDFIELD, "Mudfield", "There is a large open space filled with dirt.");
+            mudfield.AddMonster(MONSTER_ID_PIXIE, 60);
+            mudfield.AddMonster(MONSTER_ID_NYMPH, 20);
+            mudfield.AddMonster(MONSTER_ID_WISP, 20);
 
             Location forgottenTower = new Location(LOCATION_ID_THE_FORGOTTEN_TOWER, "The Forgotten Tower", "A massive tower stands " +
                 "before you, reaching towards the heavens. The tower is composed entirely of some dark coloured stone and looks " +
                 "rather imposing.");
+            forgottenTower.AddMonster(MONSTER_ID_GOLEM, 50);
+            forgottenTower.AddMonster(MONSTER_ID_IMP, 20);
+            forgottenTower.AddMonster(MONSTER_ID_FIRE_ELEMENTAL, 20);
+            forgottenTower.AddMonster(MONSTER_ID_DEATHKNIGHT, 10);
 
             Location lessTraveledRoad = new Location(LOCATION_ID_LESS_TRAVELED_ROAD, "Less Traveled Road", "The road looks like no" +
                 " one has been here for a while. You can see a large tower in the distance.");
+            lessTraveledRoad.AddMonster(MONSTER_ID_OGRE, 70);
+            lessTraveledRoad.AddMonster(MONSTER_ID_WISP, 30);
 
             Location stairsToTheSpire = new Location(LOCATION_ID_STAIRS_TO_THE_SPIRE, "Spiral Stairs", "The stairs spiral up the tower, " +
                 "seeming to drag on forever.");
+            stairsToTheSpire.AddMonster(MONSTER_ID_ANIMATED_ARMOR, 30);
+            stairsToTheSpire.AddMonster(MONSTER_ID_ANIMATED_BOOK, 30);
+            stairsToTheSpire.AddMonster(MONSTER_ID_FLYING_AXE, 20);
+            stairsToTheSpire.AddMonster(MONSTER_ID_WITCH, 10);
+            stairsToTheSpire.AddMonster(MONSTER_ID_MIMIC, 10);
 
             Location forgottenTowerSpire = new Location(LOCATION_ID_THE_SPIRE, "Spire", "Lightning crackles around you at the top of " +
                 "the spire. The noise is deafening. You cannot see the ground as the dark clouds block your line of sight.");
+            forgottenTowerSpire.AddMonster(MONSTER_ID_WIZARD, 100);
 
             Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
+            bridge.AddMonster(MONSTER_ID_TROLL, 100);
 
             Location entranceYognarWoods = new Location(LOCATION_ID_ENTRANCE_TO_YOGNAR_WOODS, "Entrance to Yognar Woods", "The entrance to Yognar Woods. " +
                 "The trees stare at you menancingly.");
+            entranceYognarWoods.AddMonster(MONSTER_ID_DRYAD, 70);
+            entranceYognarWoods.AddMonster(MONSTER_ID_ENT, 30);
 
             Location inTheWoods = new Location(LOCATION_ID_IN_THE_WOODS, "In the Woods", "Trees can be seen everywhere. Trees. " +
                 "So many trees. All you can see are trees.");
+            inTheWoods.AddMonster(MONSTER_ID_CENTAUR, 10);
+            inTheWoods.AddMonster(MONSTER_ID_DIRE_BEAR, 10);
+            inTheWoods.AddMonster(MONSTER_ID_DIRE_WOLF, 10);
+            inTheWoods.AddMonster(MONSTER_ID_GREEN_SLIME, 10);
+            inTheWoods.AddMonster(MONSTER_ID_GREEN_DRAGON, 10);
+            inTheWoods.AddMonster(MONSTER_ID_NYMPH, 10);
+            inTheWoods.AddMonster(MONSTER_ID_SATYR, 10);
+            inTheWoods.AddMonster(MONSTER_ID_PIXIE, 10);
+            inTheWoods.AddMonster(MONSTER_ID_WISP, 10);
+            inTheWoods.AddMonster(MONSTER_ID_GIANT_SPIDER, 10);
 
             Location river = new Location(LOCATION_ID_RIVER_CROSSING, "River Crossing", "You can see a small town to the west.");
+            river.AddMonster(MONSTER_ID_TROLL, 70);
+            river.AddMonster(MONSTER_ID_NAGA, 30);
 
             Location riverUptrail = new Location(LOCATION_ID_RIVER_UPTRAIL, "Following River North", "The river continues.");
+            riverUptrail.AddMonster(MONSTER_ID_NAGA, 50);
+            riverUptrail.AddMonster(MONSTER_ID_NAIAD, 50);
 
             Location riverUptrailEnd= new Location(LOCATION_ID_RIVER_UPTRAIL_DEAD_END, "River End", "The river merges into a massive " +
                 "body of water in the distant.");
+            riverUptrailEnd.AddMonster(MONSTER_ID_NAIAD, 100);
 
             Location riverDowntrail = new Location(LOCATION_ID_RIVER_DOWNTRAIL, "Following River South", "You can see massive mountains " +
                 "to the south from where the river emerges.");
+            riverDowntrail.AddMonster(MONSTER_ID_NAGA, 100);
 
             //Location mountainEntrance = new Location(LOCATION_ID_MOUNTAIN_ENTRANCE, "Mountain Pass", "There is a large open space filled with dirt.");
 
@@ -514,14 +579,26 @@ namespace Engine
 
             Location cemetary = new Location(LOCATION_ID_WESTBROOK_CEMETARY, "Westbrook Cemetary", "Stone graves rise out of the " +
                 "ground. A chill air fills the air.");
+            cemetary.AddMonster(MONSTER_ID_SKELETON, 35);
+            cemetary.AddMonster(MONSTER_ID_ZOMBIE, 30);
+            cemetary.AddMonster(MONSTER_ID_NECROMANCER, 10);
+            cemetary.AddMonster(MONSTER_ID_WRAITH, 10);
+            cemetary.AddMonster(MONSTER_ID_SHADOW, 10);
+            cemetary.AddMonster(MONSTER_ID_LICH, 5);
 
             Location chapel = new Location(LOCATION_ID_MUDFIELD, "Chapel", "You find yourself in a humble chapel. Art to various " +
                 "deities can be seen here.");
 
             Location kingsRoad = new Location(LOCATION_ID_KINGS_ROAD, "King's Road", "The road leads towards Lorthar Castle.");
+            kingsRoad.AddMonster(MONSTER_ID_THIEF, 30);
+            kingsRoad.AddMonster(MONSTER_ID_DARK_ELF, 30);
+            kingsRoad.AddMonster(MONSTER_ID_RABID_DOG, 40);
 
             Location valleyNearCastle = new Location(LOCATION_ID_VALLEY_NEAR_CASTLE, "Valley Near Lorthar Castle", "The road passes " +
                 "through the valley. Lorthar castle can be seen to the north. Westbrook is to the south.");
+            valleyNearCastle.AddMonster(MONSTER_ID_DIRE_BEAR, 30);
+            valleyNearCastle.AddMonster(MONSTER_ID_GOBLIN, 30);
+            valleyNearCastle.AddMonster(MONSTER_ID_BUGBEAR, 40);
 
             Location castleGates = new Location(LOCATION_ID_CASTLE_GATES, "Castle Gates", "Two massive gates bar the way into the " +
                 "castle. You can see the courtyards to the sides.");
@@ -560,21 +637,33 @@ namespace Engine
 
             Location lostRoad = new Location(LOCATION_ID_LOST_ROAD, "Lost Road", "The path is incredibly worn. It looks like " +
                 "no one has been here in ages.");
+            lostRoad.AddMonster(MONSTER_ID_HEADLESS_HORSEMAN, 20);
+            lostRoad.AddMonster(MONSTER_ID_NIGHTMARE, 50);
+            lostRoad.AddMonster(MONSTER_ID_DARK_ELF, 30);
 
             Location eastLostRuins = new Location(LOCATION_ID_EASTERN_LOST_RUINS, "Lost Ruins", "Large ruins are scattered around. " +
                 "There are many collapsed buildings around.");
+            eastLostRuins.AddMonster(MONSTER_ID_GIANT_SPIDER, 70);
+            eastLostRuins.AddMonster(MONSTER_ID_THIEF, 20);
+            eastLostRuins.AddMonster(MONSTER_ID_BUGBEAR, 10);
 
             Location southernBrokenStructure = new Location(LOCATION_ID_SOUTHERN_BROKEN_BUILDING, "Broken Building", "The collapsed " +
                 "building is filled with cracks in the walls and vines growing out of the ground.");
+            southernBrokenStructure.AddMonster(MONSTER_ID_GOBLIN, 100);
 
             Location westernLostRuins = new Location(LOCATION_ID_WESTERN_LOST_RUINS, "Lost Ruins", "More broken down ruins are" +
                 " scattered around the area.");
+            westernLostRuins.AddMonster(MONSTER_ID_ZOMBIE, 30);
+            westernLostRuins.AddMonster(MONSTER_ID_WRAITH, 30);
+            westernLostRuins.AddMonster(MONSTER_ID_GREEN_SLIME, 40);
 
             Location northernBrokenStructure = new Location(LOCATION_ID_NORTHERN_BROKEN_BUILDING, "Broken Building", "A small chest " +
                 "sits in the corner of this collapsed building.");
+            northernBrokenStructure.AddMonster(MONSTER_ID_MIMIC, 100);
 
             Location finalLostRuins = new Location(LOCATION_ID_FINAL_LOST_RUINS, "Lost Ruins", "The buildings here are damaged " +
                 "beyond repair and many beyond even recognition.");
+            finalLostRuins.AddMonster(MONSTER_ID_WYVERN, 100);
 
             Location dragonAltar = new Location(LOCATION_ID_ALTAR_DRAGON, "Dragon Altar", "A titan of a dragon carved out of stone " +
                 "sits here in prestine condition. Its size fills you with awe.");
@@ -584,6 +673,7 @@ namespace Engine
 
             Location darkPortal = new Location(LOCATION_ID_DARK_PORTAL, "Dark Portal", "A purple void sits before you in a stone" +
                 " wall, seemingly drawing you in.");
+            darkPortal.AddMonster(MONSTER_ID_DEATHKNIGHT, 100);
 
 
             //Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.");
