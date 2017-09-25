@@ -41,15 +41,13 @@ namespace Engine
         public const int ITEM_ID_LONG_BOW = 27;
         public const int ITEM_ID_COIN_PURSE = 28;
         public const int ITEM_ID_PAN_PIPES = 29;
-        public const int ITEM_ID_KOBOLD_SNOUT = 30;
-/*        public const int MONSTER_ID_THIEF = 23;
-        public const int MONSTER_ID_SATYR = 24;
-        public const int MONSTER_ID_KOBOLD = 25;
-        public const int MONSTER_ID_BUGBEAR = 26;
-        public const int MONSTER_ID_SCARECROW = 27;
-        public const int MONSTER_ID_GIANT_MOTH = 28;
-        public const int MONSTER_ID_ANIMATED_BOOK = 29;
-        public const int MONSTER_ID_MUMMY = 30;
+        public const int ITEM_ID_KOBOLD_TAIL = 30;
+        public const int ITEM_ID_SPIKED_CLUB = 31;
+        public const int ITEM_ID_BUNDLE_OF_STRAW = 32;
+        public const int ITEM_ID_GIANT_MOTH_WINGS = 33;
+        public const int ITEM_ID_DAMAGED_BOOK = 34;
+        public const int ITEM_ID_BANDAGES = 35;
+/*
         public const int MONSTER_ID_SCARAB = 31;
         public const int MONSTER_ID_GIANT_WORM = 32;
         public const int MONSTER_ID_DARK_ELF = 33;
