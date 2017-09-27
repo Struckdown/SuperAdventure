@@ -19,8 +19,10 @@ namespace SuperAdventure
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            SuperAdventure superAdventure = new SuperAdventure(true);
-            superAdventure.StartPosition = FormStartPosition.CenterParent;
+            SuperAdventure superAdventure = new SuperAdventure(true)
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
             superAdventure.ShowDialog(this);
             Close();
         }

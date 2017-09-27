@@ -242,7 +242,7 @@ namespace SuperAdventureConsole
                 else
                 {
                     HealingPotion potionToDrink =
-                        _player.Potions.SingleOrDefault(
+                        (HealingPotion) _player.SecondaryItem.SingleOrDefault(
                             x => x.Name.ToLower() == inputPotionName || x.NamePlural.ToLower() == inputPotionName);
 
                     if (potionToDrink == null)
