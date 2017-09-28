@@ -47,33 +47,36 @@ namespace Engine
         public const int ITEM_ID_GIANT_MOTH_WINGS = 33;
         public const int ITEM_ID_DAMAGED_BOOK = 34;
         public const int ITEM_ID_BANDAGES = 35;
-/*
-        public const int MONSTER_ID_SCARAB = 31;
-        public const int MONSTER_ID_GIANT_WORM = 32;
-        public const int MONSTER_ID_DARK_ELF = 33;
-        public const int MONSTER_ID_IMP = 34;
-        public const int MONSTER_ID_HEADLESS_HORSEMAN = 35;
-        public const int MONSTER_ID_CENTAUR = 36;
-        public const int MONSTER_ID_WYVERN = 37;
-        public const int MONSTER_ID_ROC = 38;
-        public const int MONSTER_ID_MIMIC = 39;
-        public const int MONSTER_ID_NIGHTMARE = 40;
-        public const int MONSTER_ID_DJINN = 41;
-        public const int MONSTER_ID_LICH = 42;
-        public const int MONSTER_ID_WITCH = 43;
-        public const int MONSTER_ID_NECROMANCER = 44;
-        public const int MONSTER_ID_LIZARDMAN = 45;
-        public const int MONSTER_ID_FIRE_ELEMENTAL = 46;
-        public const int MONSTER_ID_GOLEM = 47; //more golems?
-        public const int MONSTER_ID_GNOME = 48;
-        public const int MONSTER_ID_PIXIE = 49;
-        public const int MONSTER_ID_DRYAD = 50;
-        public const int MONSTER_ID_HARPY = 51;
-        public const int MONSTER_ID_NAGA = 52;
-        public const int MONSTER_ID_NYMPH = 53;
-        public const int MONSTER_ID_NAIAD = 54; //double check spelling
-        public const int MONSTER_ID_DIRE_BEAR = 55;
-*/
+        public const int ITEM_ID_SCARAB_LEGS = 36;
+        public const int ITEM_ID_WORM_TOOTH = 37;
+        public const int ITEM_ID_ELVEN_BROOCH = 38;
+        public const int ITEM_ID_MANA_POTION = 39;
+        public const int ITEM_ID_BLACK_GAUNTLET = 40;
+        public const int ITEM_ID_CENTAUR_HOOF = 41;
+        public const int ITEM_ID_WYVERN_WINGS = 42;
+        public const int ITEM_ID_WYVERN_TAIL = 43;
+        public const int ITEM_ID_GIANT_FEATHER = 44;
+        public const int ITEM_ID_STONE_OF_TRUTH = 45; // mimic loot
+        public const int ITEM_ID_BURNT_HAIR = 46;
+        public const int ITEM_ID_SILVER_LONGSWORD = 47;
+        public const int ITEM_ID_TOME_OF_POWER = 48;
+        public const int ITEM_ID_EYE_OF_NEWT = 49;
+        public const int ITEM_ID_LIFEDRINKER_SKULL = 50;
+        public const int ITEM_ID_CURSED_STAFF = 51;
+        public const int ITEM_ID_LIZARD_TAIL = 52;
+        public const int ITEM_ID_ASHES = 53;
+        public const int ITEM_ID_RUBY = 54;
+        public const int ITEM_ID_CRACKED_OBSIDIAN = 55;
+        public const int ITEM_ID_RED_HAT = 56;
+        public const int ITEM_ID_FAERIE_DUST = 57;
+        public const int ITEM_ID_ORANGE_MUSHROOM = 58;
+        public const int ITEM_ID_HARPY_FEATHER = 59;
+        public const int ITEM_ID_TRIDANT = 60;
+        public const int ITEM_ID_EMERALD_RING = 61;
+        public const int ITEM_ID_hearthstone_cardback = 62;
+        public const int ITEM_ID_MICROSOFT = 63;
+        public const int ITEM_ID_GOLDEN_RING = 64;
+        public const int ITEM_ID_BEAR_PELT = 65;
 
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
@@ -223,6 +226,67 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes", UNSELLABLE_ITEM_PRICE));
             _items.Add(new HealingPotion(ITEM_ID_GREATER_HEALING_POTION, "Greater Healing potion", "Greater Healing potions", 15, 3, 25));
             _items.Add(new DamageMagicScroll(ITEM_ID_SCROLL_MINOR_FIREBALL, "Scroll of Minor Fireball", "Scrolls of Minor Fireball", 2, 3, 5, 10));
+            _items.Add(new Item(ITEM_ID_TROLL_BLOOD, "Flask of troll blood", "Flasks of troll blood", 38));
+            _items.Add(new Item(ITEM_ID_GREEN_JELLY, "Green jelly", "Green jelly", 3));
+            _items.Add(new Item(ITEM_ID_HUMAN_BONES, "Human bones", "Human bones", 22));
+            _items.Add(new Item(ITEM_ID_ROTTING_SKULL, "Rotting skull", "Rotting skulls", 41));
+            _items.Add(new Item(ITEM_ID_BROKEN_HELMET, "Broken helmet", "Broken helmets", 17));
+            _items.Add(new Item(ITEM_ID_DAMAGED_AXE, "Damaged axe", "Damaged axes", 14));
+            _items.Add(new Item(ITEM_ID_WISP_FRAGMENT, "Wisp fragment", "Wisp fragments", 7));
+            _items.Add(new Item(ITEM_ID_LARGE_BRANCH, "Large branch", "Large branches", 4));
+            _items.Add(new Item(ITEM_ID_SPIKED_COLLAR, "Spiked collar", "Spiked collar", 7));
+            _items.Add(new Item(ITEM_ID_SHARP_SWORD, "Sharp sword", "Sharp swords", 70));
+            _items.Add(new Item(ITEM_ID_DRAGONHIDE, "Dragonhide", "Dragonhides", 120));
+            _items.Add(new Item(ITEM_ID_WOLF_FANG, "Wolf fang", "Wolf fangs", 25));
+            _items.Add(new Item(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 750));
+            _items.Add(new Item(ITEM_ID_CURSED_RING, "Cursed ring", "Cursed rings", 99));
+            /*
+        public const int ITEM_ID_LARGE_BRANCH = 20;
+        public const int ITEM_ID_SPIKED_COLLAR = 21;
+        public const int ITEM_ID_SHARP_SWORD = 22;
+        public const int ITEM_ID_DRAGONHIDE = 23;
+        public const int ITEM_ID_WOLF_FANG = 24;
+        public const int ITEM_ID_VORPAL_SWORD = 25;
+        public const int ITEM_ID_CURSED_RING = 26;
+        public const int ITEM_ID_LONG_BOW = 27;
+        public const int ITEM_ID_COIN_PURSE = 28;
+        public const int ITEM_ID_PAN_PIPES = 29;
+        public const int ITEM_ID_KOBOLD_TAIL = 30;
+        public const int ITEM_ID_SPIKED_CLUB = 31;
+        public const int ITEM_ID_BUNDLE_OF_STRAW = 32;
+        public const int ITEM_ID_GIANT_MOTH_WINGS = 33;
+        public const int ITEM_ID_DAMAGED_BOOK = 34;
+        public const int ITEM_ID_BANDAGES = 35;
+        public const int ITEM_ID_SCARAB_LEGS = 36;
+        public const int ITEM_ID_WORM_TOOTH = 37;
+        public const int ITEM_ID_ELVEN_BROOCH = 38;
+        public const int ITEM_ID_MANA_POTION = 39;
+        public const int ITEM_ID_BLACK_GAUNTLET = 40;
+        public const int ITEM_ID_CENTAUR_HOOF = 41;
+        public const int ITEM_ID_WYVERN_WINGS = 42;
+        public const int ITEM_ID_WYVERN_TAIL = 43;
+        public const int ITEM_ID_GIANT_FEATHER = 44;
+        public const int ITEM_ID_STONE_OF_TRUTH = 45; // mimic loot
+        public const int ITEM_ID_BURNT_HAIR = 46;
+        public const int ITEM_ID_SILVER_LONGSWORD = 47;
+        public const int ITEM_ID_TOME_OF_POWER = 48;
+        public const int ITEM_ID_EYE_OF_NEWT = 49;
+        public const int ITEM_ID_LIFEDRINKER_SKULL = 50;
+        public const int ITEM_ID_CURSED_STAFF = 51;
+        public const int ITEM_ID_LIZARD_TAIL = 52;
+        public const int ITEM_ID_ASHES = 53;
+        public const int ITEM_ID_RUBY = 54;
+        public const int ITEM_ID_CRACKED_OBSIDIAN = 55;
+        public const int ITEM_ID_RED_HAT = 56;
+        public const int ITEM_ID_FAERIE_DUST = 57;
+        public const int ITEM_ID_ORANGE_MUSHROOM = 58;
+        public const int ITEM_ID_HARPY_FEATHER = 59;
+        public const int ITEM_ID_TRIDANT = 60;
+        public const int ITEM_ID_EMERALD_RING = 61;
+        public const int ITEM_ID_hearthstone_cardback = 62;
+        public const int ITEM_ID_MICROSOFT = 63;
+        public const int ITEM_ID_GOLDEN_RING = 64;
+        public const int ITEM_ID_BEAR_PELT = 65;*/
         }
 
         private static void PopulateMonsters()
