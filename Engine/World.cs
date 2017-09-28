@@ -12,7 +12,7 @@ namespace Engine
 
         public const int UNSELLABLE_ITEM_PRICE = -1;
 
-        public const int ITEM_ID_RUSTY_SWORD = 1;
+        public const int ITEM_ID_BROKEN_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
         public const int ITEM_ID_PIECE_OF_FUR = 3;
         public const int ITEM_ID_SNAKE_FANG = 4;
@@ -73,10 +73,8 @@ namespace Engine
         public const int ITEM_ID_HARPY_FEATHER = 59;
         public const int ITEM_ID_TRIDANT = 60;
         public const int ITEM_ID_EMERALD_RING = 61;
-        public const int ITEM_ID_hearthstone_cardback = 62;
-        public const int ITEM_ID_MICROSOFT = 63;
-        public const int ITEM_ID_GOLDEN_RING = 64;
-        public const int ITEM_ID_BEAR_PELT = 65;
+        public const int ITEM_ID_GOLDEN_RING = 62;
+        public const int ITEM_ID_BEAR_PELT = 63;
 
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
@@ -214,7 +212,7 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            _items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 1, 0, 5, 5));
+            _items.Add(new Weapon(ITEM_ID_BROKEN_SWORD, "Broken sword", "Broken swords", 1, 0, 5, 5));
             _items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails", 1));
             _items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur", 1));
             _items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs", 1));
@@ -240,53 +238,45 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_WOLF_FANG, "Wolf fang", "Wolf fangs", 25));
             _items.Add(new Item(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 750));
             _items.Add(new Item(ITEM_ID_CURSED_RING, "Cursed ring", "Cursed rings", 99));
+            _items.Add(new Item(ITEM_ID_LONG_BOW, "Long bow", "Long bows", 200));
+            _items.Add(new Item(ITEM_ID_COIN_PURSE, "Coin purse", "Coin purses", 80));
+            _items.Add(new Item(ITEM_ID_PAN_PIPES, "Pan pipes", "Pan pipes", 33));
+            _items.Add(new Item(ITEM_ID_KOBOLD_TAIL, "Kobold tail", "Kobold tails", 6));
+            _items.Add(new Item(ITEM_ID_SPIKED_CLUB, "Spiked club", "Spiked clubs", 62));
+            _items.Add(new Item(ITEM_ID_BUNDLE_OF_STRAW, "Bundle of straw", "Bundles of straw", 15));
+            _items.Add(new Item(ITEM_ID_GIANT_MOTH_WINGS, "Giant moth wing", "Giant moth wings", 320));
+            _items.Add(new Item(ITEM_ID_DAMAGED_BOOK, "Damage book", "Damaged books", 19));
+            _items.Add(new Item(ITEM_ID_BANDAGES, "Bandage", "Bandages", 16));
+            _items.Add(new Item(ITEM_ID_SCARAB_LEGS, "Scarab leg", "Scarab legs", 22));
+            _items.Add(new Item(ITEM_ID_WORM_TOOTH, "Worm tooth", "Worm teeth", 99));
+            _items.Add(new Item(ITEM_ID_ELVEN_BROOCH, "Elven brooch", "Elven brooches", 220));
+            _items.Add(new Item(ITEM_ID_MANA_POTION, "Mana potion", "Mana potions", 75));
+            _items.Add(new Item(ITEM_ID_BLACK_GAUNTLET, "Black gauntlet", "Black gaunlets", 80));
+            _items.Add(new Item(ITEM_ID_CENTAUR_HOOF, "Centaur hoof", "Centaur hooves", 46));
+            _items.Add(new Item(ITEM_ID_WYVERN_WINGS, "Wyvern wing", "Wyvern wings", 170));
+            _items.Add(new Item(ITEM_ID_WYVERN_TAIL, "Wyvern tail", "Wyvern tails", 340));
+            _items.Add(new Item(ITEM_ID_GIANT_FEATHER, "Giant feather", "Giant feathers", 620));
+            _items.Add(new Item(ITEM_ID_STONE_OF_TRUTH, "Stone of Truth", "Stones of Truth", 500)); //mimic loot
+            _items.Add(new Item(ITEM_ID_BURNT_HAIR, "Burnt hair", "Burnt hair", 35));
+            _items.Add(new Item(ITEM_ID_SILVER_LONGSWORD, "Silver longsword", "Silver longswords", 300));
+            _items.Add(new Item(ITEM_ID_TOME_OF_POWER, "Tome of Power", "Tomes of Powers", 1000));
+            _items.Add(new Item(ITEM_ID_EYE_OF_NEWT, "Eye of newt", "Eyes of newt", 62));
+            _items.Add(new Item(ITEM_ID_LIFEDRINKER_SKULL, "Lifedrinker skull", "Lifedrinker skulls", 460));
+            _items.Add(new Item(ITEM_ID_CURSED_STAFF, "Cursed staff", "Cursed staves", 310));
+            _items.Add(new Item(ITEM_ID_LIZARD_TAIL, "Lizard tail", "Lizard tails", 80));
+            _items.Add(new Item(ITEM_ID_ASHES, "Ashes", "Ashes", 3));
+            _items.Add(new Item(ITEM_ID_RUBY, "Cracked ruby", "Cracked rubies", 1500));
+            _items.Add(new Item(ITEM_ID_CRACKED_OBSIDIAN, "Cracked obsidian", "Cracked obsidians", 275));
+            _items.Add(new Item(ITEM_ID_RED_HAT, "Red gnome hat", "Red gnome hats", 25));
             /*
-        public const int ITEM_ID_LARGE_BRANCH = 20;
-        public const int ITEM_ID_SPIKED_COLLAR = 21;
-        public const int ITEM_ID_SHARP_SWORD = 22;
-        public const int ITEM_ID_DRAGONHIDE = 23;
-        public const int ITEM_ID_WOLF_FANG = 24;
-        public const int ITEM_ID_VORPAL_SWORD = 25;
-        public const int ITEM_ID_CURSED_RING = 26;
-        public const int ITEM_ID_LONG_BOW = 27;
-        public const int ITEM_ID_COIN_PURSE = 28;
-        public const int ITEM_ID_PAN_PIPES = 29;
-        public const int ITEM_ID_KOBOLD_TAIL = 30;
-        public const int ITEM_ID_SPIKED_CLUB = 31;
-        public const int ITEM_ID_BUNDLE_OF_STRAW = 32;
-        public const int ITEM_ID_GIANT_MOTH_WINGS = 33;
-        public const int ITEM_ID_DAMAGED_BOOK = 34;
-        public const int ITEM_ID_BANDAGES = 35;
-        public const int ITEM_ID_SCARAB_LEGS = 36;
-        public const int ITEM_ID_WORM_TOOTH = 37;
-        public const int ITEM_ID_ELVEN_BROOCH = 38;
-        public const int ITEM_ID_MANA_POTION = 39;
-        public const int ITEM_ID_BLACK_GAUNTLET = 40;
-        public const int ITEM_ID_CENTAUR_HOOF = 41;
-        public const int ITEM_ID_WYVERN_WINGS = 42;
-        public const int ITEM_ID_WYVERN_TAIL = 43;
-        public const int ITEM_ID_GIANT_FEATHER = 44;
-        public const int ITEM_ID_STONE_OF_TRUTH = 45; // mimic loot
-        public const int ITEM_ID_BURNT_HAIR = 46;
-        public const int ITEM_ID_SILVER_LONGSWORD = 47;
-        public const int ITEM_ID_TOME_OF_POWER = 48;
-        public const int ITEM_ID_EYE_OF_NEWT = 49;
-        public const int ITEM_ID_LIFEDRINKER_SKULL = 50;
-        public const int ITEM_ID_CURSED_STAFF = 51;
-        public const int ITEM_ID_LIZARD_TAIL = 52;
-        public const int ITEM_ID_ASHES = 53;
-        public const int ITEM_ID_RUBY = 54;
-        public const int ITEM_ID_CRACKED_OBSIDIAN = 55;
         public const int ITEM_ID_RED_HAT = 56;
         public const int ITEM_ID_FAERIE_DUST = 57;
         public const int ITEM_ID_ORANGE_MUSHROOM = 58;
         public const int ITEM_ID_HARPY_FEATHER = 59;
         public const int ITEM_ID_TRIDANT = 60;
         public const int ITEM_ID_EMERALD_RING = 61;
-        public const int ITEM_ID_hearthstone_cardback = 62;
-        public const int ITEM_ID_MICROSOFT = 63;
-        public const int ITEM_ID_GOLDEN_RING = 64;
-        public const int ITEM_ID_BEAR_PELT = 65;*/
+        public const int ITEM_ID_GOLDEN_RING = 62;
+        public const int ITEM_ID_BEAR_PELT = 63;*/
         }
 
         private static void PopulateMonsters()
@@ -608,7 +598,7 @@ namespace Engine
             farmersField.AddMonster(MONSTER_ID_SCARECROW, 20);
 
             Location eastGuardPost = new Location(LOCATION_ID_WEST_GUARD_POST, "Guard Post", "There is a large, tough-looking guard here."
-                , ItemByID(ITEM_ID_RUSTY_SWORD));
+                , ItemByID(ITEM_ID_BROKEN_SWORD));
 
             Location westGuardPost = new Location(LOCATION_ID_EAST_GUARD_POST, "Guard Post", "A large guard greets you and lets you pass.");
 
