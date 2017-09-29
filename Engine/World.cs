@@ -268,6 +268,9 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_RUBY, "Cracked ruby", "Cracked rubies", 1500));
             _items.Add(new Item(ITEM_ID_CRACKED_OBSIDIAN, "Cracked obsidian", "Cracked obsidians", 275));
             _items.Add(new Item(ITEM_ID_RED_HAT, "Red gnome hat", "Red gnome hats", 25));
+            _items.Add(new Item(ITEM_ID_FAERIE_DUST, "Faerie dust", "Faerie dust", 22));
+            _items.Add(new Item(ITEM_ID_ORANGE_MUSHROOM, "Orange mushroom", "Orange mushrooms", 41));
+            _items.Add(new Item(ITEM_ID_HARPY_FEATHER, "Harpy feather", "Harpy feathers", 35));
             /*
         public const int ITEM_ID_RED_HAT = 56;
         public const int ITEM_ID_FAERIE_DUST = 57;
