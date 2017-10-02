@@ -271,15 +271,10 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_FAERIE_DUST, "Faerie dust", "Faerie dust", 22));
             _items.Add(new Item(ITEM_ID_ORANGE_MUSHROOM, "Orange mushroom", "Orange mushrooms", 41));
             _items.Add(new Item(ITEM_ID_HARPY_FEATHER, "Harpy feather", "Harpy feathers", 35));
-            /*
-        public const int ITEM_ID_RED_HAT = 56;
-        public const int ITEM_ID_FAERIE_DUST = 57;
-        public const int ITEM_ID_ORANGE_MUSHROOM = 58;
-        public const int ITEM_ID_HARPY_FEATHER = 59;
-        public const int ITEM_ID_TRIDANT = 60;
-        public const int ITEM_ID_EMERALD_RING = 61;
-        public const int ITEM_ID_GOLDEN_RING = 62;
-        public const int ITEM_ID_BEAR_PELT = 63;*/
+            _items.Add(new Item(ITEM_ID_TRIDANT, "Tridant", "Tridants", 450));
+            _items.Add(new Item(ITEM_ID_EMERALD_RING, "Emerald ring", "Emerald rings", 280));
+            _items.Add(new Item(ITEM_ID_GOLDEN_RING, "Gold ring", "Gold rings", 160));
+            _items.Add(new Item(ITEM_ID_BEAR_PELT, "Bear pelt", "Bear pelts", 95));
         }
 
         private static void PopulateMonsters()
@@ -297,6 +292,7 @@ namespace Engine
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
             Monster troll = new Monster(MONSTER_ID_TROLL, "Troll", 30, 50, 40, 120, 120);
+            troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_TROLL_BLOOD), 40, false));
 
             Monster greenSlime = new Monster(MONSTER_ID_GREEN_SLIME, "Green Slime", 3, 2, 2, 4, 4);
 
