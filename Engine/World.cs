@@ -292,39 +292,67 @@ namespace Engine
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
             Monster troll = new Monster(MONSTER_ID_TROLL, "Troll", 30, 50, 40, 120, 120);
-            troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_TROLL_BLOOD), 40, false));
+            troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_TROLL_BLOOD), 40, true));
+            troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_CLUB), 10, false));
 
             Monster greenSlime = new Monster(MONSTER_ID_GREEN_SLIME, "Green Slime", 3, 2, 2, 4, 4);
+            troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GREEN_JELLY), 100, true));
 
             Monster skeleton = new Monster(MONSTER_ID_SKELETON, "Skeleton", 8, 12, 1, 14, 14);
+            skeleton.LootTable.Add(new LootItem(ItemByID(ITEM_ID_HUMAN_BONES), 60, true));
+            skeleton.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ROTTING_SKULL), 20, false));
 
             Monster wizard = new Monster(MONSTER_ID_WIZARD, "Wizard", 40, 200, 50, 65, 65);
+            wizard.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SCROLL_MINOR_FIREBALL), 80, true));
+            wizard.LootTable.Add(new LootItem(ItemByID(ITEM_ID_STONE_OF_TRUTH), 20, false));
+            wizard.LootTable.Add(new LootItem(ItemByID(ITEM_ID_CURSED_RING), 30, false));
+            wizard.LootTable.Add(new LootItem(ItemByID(ITEM_ID_MANA_POTION), 50, true));
 
             Monster zombie = new Monster(MONSTER_ID_ZOMBIE, "Zombie", 4, 6, 3, 18, 18);
+            zombie.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ROTTING_SKULL), 100, true));
 
             Monster grue = new Monster(MONSTER_ID_GRUE, "The Grue", 30, 500, 200, 150, 150);
+            grue.LootTable.Add(new LootItem(ItemByID(ITEM_ID_HUMAN_BONES), 80, true));
+            grue.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR), 80, true));
+            grue.LootTable.Add(new LootItem(ItemByID(ITEM_ID_EMERALD_RING), 20, false));
 
             Monster shadow = new Monster(MONSTER_ID_SHADOW, "Shadow", 15, 10, 0, 4, 4);
 
             Monster animatedArmor = new Monster(MONSTER_ID_ANIMATED_ARMOR, "Animated Armor", 7, 24, 18, 32, 32);
+            animatedArmor.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BROKEN_HELMET), 60, true));
+            animatedArmor.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BROKEN_SWORD), 40, false));
 
             Monster flyingAxe = new Monster(MONSTER_ID_FLYING_AXE, "Flying Axe", 10, 12, 3, 3, 3);
+            flyingAxe.LootTable.Add(new LootItem(ItemByID(ITEM_ID_DAMAGED_AXE), 75, false));
 
             Monster wisp = new Monster(MONSTER_ID_WISP, "Wisp", 4, 4, 5, 7, 7);
+            wisp.LootTable.Add(new LootItem(ItemByID(ITEM_ID_WISP_FRAGMENT), 100, true));
 
             Monster ent = new Monster(MONSTER_ID_ENT, "Ent", 16, 65, 34, 48, 48);
+            ent.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LARGE_BRANCH), 50, false));
 
             Monster rabidDog = new Monster(MONSTER_ID_RABID_DOG, "Rabid Dog", 5, 6, 2, 8, 8);
+            rabidDog.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_COLLAR), 60, false));
 
             Monster ogre = new Monster(MONSTER_ID_OGRE, "Ogre", 24, 20, 35, 38, 38);
+            ogre.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_CLUB), 10, false));
 
             Monster goblin = new Monster(MONSTER_ID_GOBLIN, "Goblin", 6, 5, 7, 6, 6);
+            goblin.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BROKEN_SWORD), 50, false));
+            goblin.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GOLDEN_RING), 10, false));
 
             Monster greenDragon = new Monster(MONSTER_ID_GREEN_DRAGON, "Green Dragon", 80, 500, 1000, 350, 350);
+            greenDragon.LootTable.Add(new LootItem(ItemByID(ITEM_ID_DRAGONHIDE), 80, true));
+            greenDragon.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RUBY), 20, false));
+            greenDragon.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SILVER_LONGSWORD), 75, false));
 
             Monster direWolf = new Monster(MONSTER_ID_DIRE_WOLF, "Dire Wolf", 16, 27, 15, 25, 25);
+            direWolf.LootTable.Add(new LootItem(ItemByID(ITEM_ID_WOLF_FANG), 75, true));
 
             Monster deathKnight = new Monster(MONSTER_ID_DEATHKNIGHT, "Death Knight", 50, 250, 200, 200, 200);
+            deathKnight.LootTable.Add(new LootItem(ItemByID(ITEM_ID_VORPAL_SWORD), 20, false));
+            deathKnight.LootTable.Add(new LootItem(ItemByID(ITEM_ID_EMERALD_RING), 30, false));
+            deathKnight.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BLACK_GAUNTLET), 70, true));
 
             Monster wraith = new Monster(MONSTER_ID_WRAITH, "Wraith", 13, 33, 19, 21, 21);
 
