@@ -357,32 +357,48 @@ namespace Engine
             Monster wraith = new Monster(MONSTER_ID_WRAITH, "Wraith", 13, 33, 19, 21, 21);
 
             Monster orc = new Monster(MONSTER_ID_ORC, "Orc", 10, 20, 20, 16, 16);
+            orc.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LONG_BOW), 30, false));
 
             Monster thief = new Monster(MONSTER_ID_THIEF, "Thief", 6, 11, 23, 11, 11);
+            thief.LootTable.Add(new LootItem(ItemByID(ITEM_ID_COIN_PURSE), 30, false));
+            thief.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SHARP_SWORD), 10, false));
 
             Monster satyr = new Monster(MONSTER_ID_SATYR, "Satyr", 24, 28, 18, 33, 33);
+            satyr.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PAN_PIPES), 60, false));
 
             Monster kobold = new Monster(MONSTER_ID_KOBOLD, "Kobold", 5, 4, 4, 7, 7);
+            kobold.LootTable.Add(new LootItem(ItemByID(ITEM_ID_KOBOLD_TAIL), 80, true));
 
             Monster bugBear = new Monster(MONSTER_ID_BUGBEAR, "Bugbear", 12, 22, 16, 19, 19);
+            bugBear.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_CLUB), 25, false));
 
             Monster scarecrow = new Monster(MONSTER_ID_SCARECROW, "Scarecrow", 9, 15, 8, 14, 14);
+            scarecrow.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BUNDLE_OF_STRAW), 40, false));
 
             Monster giantMoth = new Monster(MONSTER_ID_GIANT_MOTH, "Giant Moth", 24, 38, 15, 57, 57);
+            giantMoth.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GIANT_MOTH_WINGS), 30, false));
 
             Monster animatedBook = new Monster(MONSTER_ID_ANIMATED_BOOK, "Animated Book", 2, 1, 3, 3, 3);
+            animatedBook.LootTable.Add(new LootItem(ItemByID(ITEM_ID_DAMAGED_BOOK), 50, false));
 
             Monster mummy = new Monster(MONSTER_ID_MUMMY, "Mummy", 14, 18, 4, 23, 23);
+            mummy.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BANDAGES), 40, false));
 
             Monster scarab = new Monster(MONSTER_ID_SCARAB, "Scarab", 9, 6, 6, 14, 14);
+            scarab.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SCARAB_LEGS), 75, false));
 
             Monster giantWorm = new Monster(MONSTER_ID_GIANT_WORM, "Giant Worm", 35, 70, 45, 78, 78);
+            giantWorm.LootTable.Add(new LootItem(ItemByID(ITEM_ID_WORM_TOOTH), 20, false));
 
             Monster darkElf = new Monster(MONSTER_ID_DARK_ELF, "Dark Elf", 24, 40, 34, 29, 29);
+            darkElf.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ELVEN_BROOCH), 20, false));
+            darkElf.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SILVER_LONGSWORD), 20, false));
 
             Monster imp = new Monster(MONSTER_ID_IMP, "Imp", 8, 10, 13, 14, 14);
+            imp.LootTable.Add(new LootItem(ItemByID(ITEM_ID_MANA_POTION), 30, false));
 
             Monster headlessHorseman = new Monster(MONSTER_ID_HEADLESS_HORSEMAN, "Headless Horseman", 40, 200, 320, 160, 160);
+            headlessHorseman.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SILVER_LONGSWORD), 70, false));
 
             Monster centaur = new Monster(MONSTER_ID_CENTAUR, "Centaur", 22, 45, 28, 35, 35);
 
