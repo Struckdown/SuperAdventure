@@ -144,7 +144,7 @@
             // 
             this.cboWeapons.FormattingEnabled = true;
             this.cboWeapons.Location = new System.Drawing.Point(492, 688);
-            this.cboWeapons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboWeapons.Margin = new System.Windows.Forms.Padding(4);
             this.cboWeapons.Name = "cboWeapons";
             this.cboWeapons.Size = new System.Drawing.Size(160, 24);
             this.cboWeapons.TabIndex = 9;
@@ -153,7 +153,7 @@
             // 
             this.cboSecondaryItem.FormattingEnabled = true;
             this.cboSecondaryItem.Location = new System.Drawing.Point(492, 730);
-            this.cboSecondaryItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboSecondaryItem.Margin = new System.Windows.Forms.Padding(4);
             this.cboSecondaryItem.Name = "cboSecondaryItem";
             this.cboSecondaryItem.Size = new System.Drawing.Size(160, 24);
             this.cboSecondaryItem.TabIndex = 10;
@@ -163,7 +163,7 @@
             // 
             this.btnUseWeapon.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnUseWeapon.Location = new System.Drawing.Point(827, 688);
-            this.btnUseWeapon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUseWeapon.Margin = new System.Windows.Forms.Padding(4);
             this.btnUseWeapon.Name = "btnUseWeapon";
             this.btnUseWeapon.Size = new System.Drawing.Size(100, 28);
             this.btnUseWeapon.TabIndex = 11;
@@ -171,11 +171,11 @@
             this.btnUseWeapon.UseVisualStyleBackColor = true;
             this.btnUseWeapon.Click += new System.EventHandler(this.btnUseWeapon_Click);
             // 
-            // btnUsePotion
+            // btnUseSecondaryItem
             // 
             this.btnUseSecondaryItem.Location = new System.Drawing.Point(827, 730);
-            this.btnUseSecondaryItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnUseSecondaryItem.Name = "btnUsePotion";
+            this.btnUseSecondaryItem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUseSecondaryItem.Name = "btnUseSecondaryItem";
             this.btnUseSecondaryItem.Size = new System.Drawing.Size(100, 28);
             this.btnUseSecondaryItem.TabIndex = 12;
             this.btnUseSecondaryItem.Text = "Use";
@@ -185,7 +185,7 @@
             // btnNorth
             // 
             this.btnNorth.Location = new System.Drawing.Point(657, 533);
-            this.btnNorth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNorth.Margin = new System.Windows.Forms.Padding(4);
             this.btnNorth.Name = "btnNorth";
             this.btnNorth.Size = new System.Drawing.Size(100, 28);
             this.btnNorth.TabIndex = 13;
@@ -196,7 +196,7 @@
             // btnEast
             // 
             this.btnEast.Location = new System.Drawing.Point(764, 562);
-            this.btnEast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEast.Margin = new System.Windows.Forms.Padding(4);
             this.btnEast.Name = "btnEast";
             this.btnEast.Size = new System.Drawing.Size(100, 28);
             this.btnEast.TabIndex = 14;
@@ -207,7 +207,7 @@
             // btnSouth
             // 
             this.btnSouth.Location = new System.Drawing.Point(657, 599);
-            this.btnSouth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSouth.Margin = new System.Windows.Forms.Padding(4);
             this.btnSouth.Name = "btnSouth";
             this.btnSouth.Size = new System.Drawing.Size(100, 28);
             this.btnSouth.TabIndex = 15;
@@ -218,7 +218,7 @@
             // btnWest
             // 
             this.btnWest.Location = new System.Drawing.Point(549, 562);
-            this.btnWest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWest.Margin = new System.Windows.Forms.Padding(4);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(100, 28);
             this.btnWest.TabIndex = 16;
@@ -229,7 +229,7 @@
             // btnTrade
             // 
             this.btnTrade.Location = new System.Drawing.Point(657, 763);
-            this.btnTrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrade.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrade.Name = "btnTrade";
             this.btnTrade.Size = new System.Drawing.Size(100, 28);
             this.btnTrade.TabIndex = 21;
@@ -240,7 +240,7 @@
             // rtbLocation
             // 
             this.rtbLocation.Location = new System.Drawing.Point(463, 23);
-            this.rtbLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbLocation.Margin = new System.Windows.Forms.Padding(4);
             this.rtbLocation.Name = "rtbLocation";
             this.rtbLocation.ReadOnly = true;
             this.rtbLocation.Size = new System.Drawing.Size(479, 128);
@@ -250,7 +250,7 @@
             // rtbMessages
             // 
             this.rtbMessages.Location = new System.Drawing.Point(463, 160);
-            this.rtbMessages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbMessages.Margin = new System.Windows.Forms.Padding(4);
             this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
             this.rtbMessages.Size = new System.Drawing.Size(479, 351);
@@ -264,13 +264,13 @@
             this.dgvInventory.AllowUserToResizeRows = false;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvInventory.Enabled = false;
             this.dgvInventory.Location = new System.Drawing.Point(21, 160);
-            this.dgvInventory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvInventory.Margin = new System.Windows.Forms.Padding(4);
             this.dgvInventory.MultiSelect = false;
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersVisible = false;
+            this.dgvInventory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvInventory.Size = new System.Drawing.Size(416, 380);
             this.dgvInventory.TabIndex = 19;
             // 
@@ -283,7 +283,7 @@
             this.dgvQuests.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvQuests.Enabled = false;
             this.dgvQuests.Location = new System.Drawing.Point(21, 549);
-            this.dgvQuests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvQuests.Margin = new System.Windows.Forms.Padding(4);
             this.dgvQuests.MultiSelect = false;
             this.dgvQuests.Name = "dgvQuests";
             this.dgvQuests.ReadOnly = true;
@@ -318,7 +318,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SuperAdventure";
             this.Text = "SuperAdventure";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SuperAdventure_FormClosing);

@@ -401,44 +401,65 @@ namespace Engine
             headlessHorseman.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SILVER_LONGSWORD), 70, false));
 
             Monster centaur = new Monster(MONSTER_ID_CENTAUR, "Centaur", 22, 45, 28, 35, 35);
+            centaur.LootTable.Add(new LootItem(ItemByID(ITEM_ID_CENTAUR_HOOF), 80, true));
+            centaur.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LONG_BOW), 30, false));
 
             Monster wyvern = new Monster(MONSTER_ID_WYVERN, "Wyvern", 45, 200, 180, 150, 150);
+            wyvern.LootTable.Add(new LootItem(ItemByID(ITEM_ID_WYVERN_TAIL), 10, false));
+            wyvern.LootTable.Add(new LootItem(ItemByID(ITEM_ID_WYVERN_WINGS), 10, false));
 
             Monster roc = new Monster(MONSTER_ID_ROC, "Roc", 48, 175, 198, 178, 178);
+            roc.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GIANT_FEATHER), 30, false));
 
             Monster mimic = new Monster(MONSTER_ID_MIMIC, "Mimic", 22, 10, 130, 35, 35);
+            mimic.LootTable.Add(new LootItem(ItemByID(ITEM_ID_STONE_OF_TRUTH), 30, false));
 
             Monster nightmare = new Monster(MONSTER_ID_NIGHTMARE, "Nightmare", 25, 80, 60, 75, 75);
+            nightmare.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ASHES), 100, true));
 
             Monster djinn = new Monster(MONSTER_ID_DJINN, "Djinn", 33, 130, 88, 72, 72);
+            djinn.LootTable.Add(new LootItem(ItemByID(ITEM_ID_CURSED_RING), 20, false));
 
             Monster lich = new Monster(MONSTER_ID_LICH, "Lich", 125, 1000, 750, 180, 180);
+            lich.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ROTTING_SKULL), 80, true));
+            lich.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LIFEDRINKER_SKULL), 10, false));
+            lich.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RUBY), 10, false));
 
             Monster witch = new Monster(MONSTER_ID_WITCH, "Witch", 22, 40, 35, 37, 37);
+            witch.LootTable.Add(new LootItem(ItemByID(ITEM_ID_EYE_OF_NEWT), 100, true));
 
             Monster necromancer = new Monster(MONSTER_ID_NECROMANCER, "Necromancer", 25, 35, 60, 34, 34);
+            necromancer.LootTable.Add(new LootItem(ItemByID(ITEM_ID_CURSED_STAFF), 30, false));
 
             Monster lizardman = new Monster(MONSTER_ID_LIZARDMAN, "Lizardman", 20, 35, 57, 16, 16);
+            lizardman.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LIZARD_TAIL), 60, false));
 
             Monster fireElemental = new Monster(MONSTER_ID_FIRE_ELEMENTAL, "Fire Elemental", 38, 70, 25, 65, 65);
 
             Monster golem = new Monster(MONSTER_ID_GOLEM, "Golem", 50, 100, 79, 86, 86);
 
             Monster gnome = new Monster(MONSTER_ID_GNOME, "Gnome", 7, 12, 9, 8, 8);
+            gnome.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RED_HAT), 30, false));
 
             Monster pixie = new Monster(MONSTER_ID_PIXIE, "Pixie", 4, 2, 4, 3, 3);
+            pixie.LootTable.Add(new LootItem(ItemByID(ITEM_ID_FAERIE_DUST), 50, false));
 
             Monster dryad = new Monster(MONSTER_ID_DRYAD, "Dryad", 12, 18, 16, 23, 23);
+            dryad.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GOLDEN_RING), 10, false));
 
             Monster harpy = new Monster(MONSTER_ID_HARPY, "Harpy", 15, 34, 22, 19, 19);
+            harpy.LootTable.Add(new LootItem(ItemByID(ITEM_ID_HARPY_FEATHER), 40, false));
 
             Monster naga = new Monster(MONSTER_ID_NAGA, "Naga", 14, 28, 23, 20, 20);
+            naga.LootTable.Add(new LootItem(ItemByID(ITEM_ID_TRIDANT), 30, false));
 
             Monster nymph = new Monster(MONSTER_ID_NYMPH, "Nymph", 9, 20, 17, 22, 22);
+            nymph.LootTable.Add(new LootItem(ItemByID(ITEM_ID_FAERIE_DUST), 80, false));
 
             Monster naiad = new Monster(MONSTER_ID_NAIAD, "Naiad", 12, 25, 16, 26, 26);
 
             Monster direbear = new Monster(MONSTER_ID_DIRE_BEAR, "Direbear", 25, 48, 61, 72, 72);
+            direbear.LootTable.Add(new LootItem(ItemByID(ITEM_ID_BEAR_PELT), 20, false));
 
             _monsters.Add(rat);
             _monsters.Add(snake);
