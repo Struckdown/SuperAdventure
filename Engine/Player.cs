@@ -169,6 +169,11 @@ namespace Engine
             // The player can enter this location
             CurrentLocation = location;
 
+            if (CurrentMonster != null && CurrentMonster.IsDead == false)
+            {
+                RaiseMessage("You run away from the " + CurrentMonster.Name);
+            }
+
             CompletelyHeal();
 
             if (location.HasAQuest)

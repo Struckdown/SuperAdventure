@@ -478,7 +478,7 @@ namespace Engine
             _monsters.Add(rabidDog);
             _monsters.Add(ogre);
             _monsters.Add(goblin);
-            _monsters.Add(greenDragon);
+            _monsters.Add(greenDragon); 
             _monsters.Add(direWolf);
             _monsters.Add(deathKnight);
             _monsters.Add(wraith);
