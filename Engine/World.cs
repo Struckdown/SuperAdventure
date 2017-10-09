@@ -233,7 +233,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_WISP_FRAGMENT, "Wisp fragment", "Wisp fragments", 7));
             _items.Add(new Item(ITEM_ID_LARGE_BRANCH, "Large branch", "Large branches", 4));
             _items.Add(new Item(ITEM_ID_SPIKED_COLLAR, "Spiked collar", "Spiked collar", 7));
-            _items.Add(new Item(ITEM_ID_SHARP_SWORD, "Sharp sword", "Sharp swords", 70));
+            _items.Add(new Weapon(ITEM_ID_SHARP_SWORD, "Sharp sword", "Sharp swords", 4, 10, 15, 250));
             _items.Add(new Item(ITEM_ID_DRAGONHIDE, "Dragonhide", "Dragonhides", 120));
             _items.Add(new Item(ITEM_ID_WOLF_FANG, "Wolf fang", "Wolf fangs", 25));
             _items.Add(new Item(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 750));
