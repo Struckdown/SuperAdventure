@@ -229,7 +229,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_HUMAN_BONES, "Human bones", "Human bones", 22));
             _items.Add(new Item(ITEM_ID_ROTTING_SKULL, "Rotting skull", "Rotting skulls", 41));
             _items.Add(new Item(ITEM_ID_BROKEN_HELMET, "Broken helmet", "Broken helmets", 17));
-            _items.Add(new Item(ITEM_ID_DAMAGED_AXE, "Damaged axe", "Damaged axes", 14));
+            _items.Add(new Weapon(ITEM_ID_DAMAGED_AXE, "Damaged axe", "Damaged axes", 1, 0, 12, 50));
             _items.Add(new Item(ITEM_ID_WISP_FRAGMENT, "Wisp fragment", "Wisp fragments", 7));
             _items.Add(new Item(ITEM_ID_LARGE_BRANCH, "Large branch", "Large branches", 4));
             _items.Add(new Item(ITEM_ID_SPIKED_COLLAR, "Spiked collar", "Spiked collar", 7));
