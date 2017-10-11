@@ -242,7 +242,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_COIN_PURSE, "Coin purse", "Coin purses", 80));
             _items.Add(new Item(ITEM_ID_PAN_PIPES, "Pan pipes", "Pan pipes", 33));
             _items.Add(new Item(ITEM_ID_KOBOLD_TAIL, "Kobold tail", "Kobold tails", 6));
-            _items.Add(new Item(ITEM_ID_SPIKED_CLUB, "Spiked club", "Spiked clubs", 62));
+            _items.Add(new Weapon(ITEM_ID_SPIKED_CLUB, "Spiked club", "Spiked clubs", 3, 7, 12, 50));
             _items.Add(new Item(ITEM_ID_BUNDLE_OF_STRAW, "Bundle of straw", "Bundles of straw", 15));
             _items.Add(new Item(ITEM_ID_GIANT_MOTH_WINGS, "Giant moth wing", "Giant moth wings", 320));
             _items.Add(new Item(ITEM_ID_DAMAGED_BOOK, "Damage book", "Damaged books", 19));
