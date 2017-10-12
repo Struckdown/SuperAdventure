@@ -236,7 +236,7 @@ namespace Engine
             _items.Add(new Weapon(ITEM_ID_SHARP_SWORD, "Sharp sword", "Sharp swords", 4, 10, 15, 250));
             _items.Add(new Item(ITEM_ID_DRAGONHIDE, "Dragonhide", "Dragonhides", 120));
             _items.Add(new Item(ITEM_ID_WOLF_FANG, "Wolf fang", "Wolf fangs", 25));
-            _items.Add(new Weapon(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 8, 15, 25, 750));
+            _items.Add(new Weapon(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 8, 35, 50, 3000));
             _items.Add(new Item(ITEM_ID_CURSED_RING, "Cursed ring", "Cursed rings", 99));
             _items.Add(new Item(ITEM_ID_LONG_BOW, "Long bow", "Long bows", 200));
             _items.Add(new Item(ITEM_ID_COIN_PURSE, "Coin purse", "Coin purses", 80));
@@ -258,11 +258,11 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_GIANT_FEATHER, "Giant feather", "Giant feathers", 620));
             _items.Add(new Item(ITEM_ID_STONE_OF_TRUTH, "Stone of Truth", "Stones of Truth", 500)); //mimic loot
             _items.Add(new Item(ITEM_ID_BURNT_HAIR, "Burnt hair", "Burnt hair", 35));
-            _items.Add(new Item(ITEM_ID_SILVER_LONGSWORD, "Silver longsword", "Silver longswords", 300));
+            _items.Add(new Weapon(ITEM_ID_SILVER_LONGSWORD, "Silver longsword", "Silver longswords", 5, 20, 30, 750));
             _items.Add(new Item(ITEM_ID_TOME_OF_POWER, "Tome of Power", "Tomes of Powers", 1000));
             _items.Add(new Item(ITEM_ID_EYE_OF_NEWT, "Eye of newt", "Eyes of newt", 62));
             _items.Add(new Item(ITEM_ID_LIFEDRINKER_SKULL, "Lifedrinker skull", "Lifedrinker skulls", 460));
-            _items.Add(new Item(ITEM_ID_CURSED_STAFF, "Cursed staff", "Cursed staves", 310));
+            _items.Add(new Weapon(ITEM_ID_CURSED_STAFF, "Cursed staff", "Cursed staves", 4, 6, 24, 320));
             _items.Add(new Item(ITEM_ID_LIZARD_TAIL, "Lizard tail", "Lizard tails", 80));
             _items.Add(new Item(ITEM_ID_ASHES, "Ashes", "Ashes", 3));
             _items.Add(new Item(ITEM_ID_RUBY, "Cracked ruby", "Cracked rubies", 1500));
@@ -271,7 +271,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_FAERIE_DUST, "Faerie dust", "Faerie dust", 22));
             _items.Add(new Item(ITEM_ID_ORANGE_MUSHROOM, "Orange mushroom", "Orange mushrooms", 41));
             _items.Add(new Item(ITEM_ID_HARPY_FEATHER, "Harpy feather", "Harpy feathers", 35));
-            _items.Add(new Item(ITEM_ID_TRIDANT, "Tridant", "Tridants", 450));
+            _items.Add(new Weapon(ITEM_ID_TRIDANT, "Tridant", "Tridants", 6, 22, 28, 450));
             _items.Add(new Item(ITEM_ID_EMERALD_RING, "Emerald ring", "Emerald rings", 280));
             _items.Add(new Item(ITEM_ID_GOLDEN_RING, "Gold ring", "Gold rings", 160));
             _items.Add(new Item(ITEM_ID_BEAR_PELT, "Bear pelt", "Bear pelts", 95));
