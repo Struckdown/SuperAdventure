@@ -238,7 +238,7 @@ namespace Engine
             _items.Add(new Item(ITEM_ID_WOLF_FANG, "Wolf fang", "Wolf fangs", 25));
             _items.Add(new Weapon(ITEM_ID_VORPAL_SWORD, "Vorpal sword", "Vorpal swords", 8, 35, 50, 3000));
             _items.Add(new Item(ITEM_ID_CURSED_RING, "Cursed ring", "Cursed rings", 99));
-            _items.Add(new Item(ITEM_ID_LONG_BOW, "Long bow", "Long bows", 200));
+            _items.Add(new Weapon(ITEM_ID_LONG_BOW, "Long bow", "Long bows", 4, 10, 25, 400));
             _items.Add(new Item(ITEM_ID_COIN_PURSE, "Coin purse", "Coin purses", 80));
             _items.Add(new Item(ITEM_ID_PAN_PIPES, "Pan pipes", "Pan pipes", 33));
             _items.Add(new Item(ITEM_ID_KOBOLD_TAIL, "Kobold tail", "Kobold tails", 6));
