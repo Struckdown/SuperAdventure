@@ -295,7 +295,7 @@ namespace Engine
             troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_TROLL_BLOOD), 40, true));
             troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_CLUB), 10, false));
 
-            Monster greenSlime = new Monster(MONSTER_ID_GREEN_SLIME, "Green Slime", 3, 2, 2, 4, 4);
+            Monster greenSlime = new Monster(MONSTER_ID_GREEN_SLIME, "Green Slime", 2, 4, 2, 2, 2);
             troll.LootTable.Add(new LootItem(ItemByID(ITEM_ID_GREEN_JELLY), 100, true));
 
             Monster skeleton = new Monster(MONSTER_ID_SKELETON, "Skeleton", 8, 12, 1, 14, 14);
@@ -331,7 +331,7 @@ namespace Engine
             Monster ent = new Monster(MONSTER_ID_ENT, "Ent", 16, 65, 34, 48, 48);
             ent.LootTable.Add(new LootItem(ItemByID(ITEM_ID_LARGE_BRANCH), 50, false));
 
-            Monster rabidDog = new Monster(MONSTER_ID_RABID_DOG, "Rabid Dog", 5, 6, 2, 8, 8);
+            Monster rabidDog = new Monster(MONSTER_ID_RABID_DOG, "Rabid Dog", 3, 6, 2, 4, 4);
             rabidDog.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIKED_COLLAR), 60, false));
 
             Monster ogre = new Monster(MONSTER_ID_OGRE, "Ogre", 24, 20, 35, 38, 38);
