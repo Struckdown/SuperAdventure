@@ -893,7 +893,7 @@ namespace Engine
             northRoad.LocationToNorth = largeHill;
 
             largeHill.LocationToSouth = northRoad;
-            largeHill.LocationToNorth = cliff;
+            largeHill.LocationToWest = cliff;
             largeHill.LocationToEast = rollingHills;
 
             rollingHills.LocationToWest = largeHill;
@@ -904,8 +904,8 @@ namespace Engine
 
             collosalCaveEntrance.LocationToSouth = rollingHills;
 
-            cliff.LocationToWest = mudfield;
-            cliff.LocationToSouth = largeHill;
+            cliff.LocationToSouth = mudfield;
+            cliff.LocationToEast = largeHill;
 
             mudfield.LocationToEast = forgottenTower;
 

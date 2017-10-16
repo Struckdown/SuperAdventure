@@ -18,6 +18,10 @@ namespace Engine
         public Location LocationToEast { get; set; }
         public Location LocationToSouth { get; set; }
         public Location LocationToWest { get; set; }
+        public string NorthTravelText { get; set; }
+        public string EastTravelText { get; set; }
+        public string SouthTravelText { get; set; }
+        public string WestTravelText { get; set; }
 
         public bool HasAMonster { get { return _monstersAtLocation.Count > 0; } }
         public bool HasAQuest { get { return QuestAvailableHere != null; } }

@@ -165,7 +165,7 @@ namespace Engine
                 RaiseMessage("You must be level " + location.MinimumLevelRequiredToEnter + " to enter the " + location.Name + ".");
                 return;
             }
-
+            
             // The player can enter this location
             CurrentLocation = location;
 
@@ -199,6 +199,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToNorth != null)
             {
+                RaiseMessage(CurrentLocation.NorthTravelText);
                 MoveTo(CurrentLocation.LocationToNorth);
             }
         }
@@ -207,6 +208,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToEast != null)
             {
+                RaiseMessage(CurrentLocation.EastTravelText);
                 MoveTo(CurrentLocation.LocationToEast);
             }
         }
@@ -215,6 +217,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToSouth != null)
             {
+                RaiseMessage(CurrentLocation.SouthTravelText);
                 MoveTo(CurrentLocation.LocationToSouth);
             }
         }
@@ -223,6 +226,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToWest != null)
             {
+                RaiseMessage(CurrentLocation.WestTravelText);
                 MoveTo(CurrentLocation.LocationToWest);
             }
         }
