@@ -849,9 +849,13 @@ namespace Engine
 
             // Link the locations together
             home.LocationToNorth = townSquare;
+            home.NorthTravelText = "You leave your home and make your way towards the town center.";
             home.LocationToEast = sideRoad;
+            home.EastTravelText = "You make your way towards the side road that heads the long way to the market district.";
             home.LocationToSouth = farmersField;
+            home.SouthTravelText = "You head towards the farmer's field to the south of your home.";
             home.LocationToWest = backAlley;
+            home.WestTravelText = "You make your way into the backalley behind your home.";
 
             townSquare.LocationToNorth = northRoad;
             townSquare.LocationToSouth = home;
@@ -859,8 +863,11 @@ namespace Engine
             townSquare.LocationToWest = westSuburbs;
 
             sideRoad.LocationToEast = deadEnd;
+            sideRoad.EastTravelText = "You head off the road towards a small set of raised ledges with no exit.";
             sideRoad.LocationToNorth = marketDistrict;
+            sideRoad.NorthTravelText = "You head towards the market district.";
             sideRoad.LocationToWest = home;
+            sideRoad.WestTravelText = "You head towards your home";
 
             backAlley.LocationToEast = home;
             backAlley.LocationToNorth = westSuburbs;

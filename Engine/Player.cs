@@ -12,6 +12,8 @@ namespace Engine
         private int _gold;
         private int _experiencePoints;
         private Location _currentLocation;
+        private enum LastTraveledDirection {noDirection=0, north=1, east=2, south=3, west=4}
+        private LastTraveledDirection lastTraveledDirection;
 
         public event EventHandler<MessageEventArgs> OnMessage;
 
@@ -165,8 +167,37 @@ namespace Engine
                 RaiseMessage("You must be level " + location.MinimumLevelRequiredToEnter + " to enter the " + location.Name + ".");
                 return;
             }
-            
+
             // The player can enter this location
+            switch (lastTraveledDirection)
+            {
+                case LastTraveledDirection.north:
+                    if(location.NorthTravelText != "")
+                    {
+                        RaiseMessage(CurrentLocation.NorthTravelText);
+                    }
+                    break;
+                case LastTraveledDirection.east:
+                    if (location.EastTravelText != "")
+                    {
+                        RaiseMessage(CurrentLocation.EastTravelText);
+                    }
+                    break;
+                case LastTraveledDirection.south:
+                    if (location.SouthTravelText != "")
+                    {
+                        RaiseMessage(CurrentLocation.SouthTravelText);
+                    }
+                    break;
+                case LastTraveledDirection.west:
+                    if (location.WestTravelText != "")
+                    {
+                        RaiseMessage(CurrentLocation.WestTravelText);
+                    }
+                    break;
+            }
+            lastTraveledDirection = LastTraveledDirection.noDirection;
+
             CurrentLocation = location;
 
             if (CurrentMonster != null && CurrentMonster.IsDead == false)
@@ -199,7 +230,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToNorth != null)
             {
-                RaiseMessage(CurrentLocation.NorthTravelText);
+                lastTraveledDirection = LastTraveledDirection.north;
                 MoveTo(CurrentLocation.LocationToNorth);
             }
         }
@@ -208,7 +239,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToEast != null)
             {
-                RaiseMessage(CurrentLocation.EastTravelText);
+                lastTraveledDirection = LastTraveledDirection.east;
                 MoveTo(CurrentLocation.LocationToEast);
             }
         }
@@ -217,7 +248,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToSouth != null)
             {
-                RaiseMessage(CurrentLocation.SouthTravelText);
+                lastTraveledDirection = LastTraveledDirection.south;
                 MoveTo(CurrentLocation.LocationToSouth);
             }
         }
@@ -226,7 +257,7 @@ namespace Engine
         {
             if (CurrentLocation.LocationToWest != null)
             {
-                RaiseMessage(CurrentLocation.WestTravelText);
+                lastTraveledDirection = LastTraveledDirection.west;
                 MoveTo(CurrentLocation.LocationToWest);
             }
         }
