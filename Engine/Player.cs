@@ -172,25 +172,25 @@ namespace Engine
             switch (lastTraveledDirection)
             {
                 case LastTraveledDirection.north:
-                    if(location.NorthTravelText != "")
+                    if(location.NorthTravelText != null)
                     {
                         RaiseMessage(CurrentLocation.NorthTravelText);
                     }
                     break;
                 case LastTraveledDirection.east:
-                    if (location.EastTravelText != "")
+                    if (location.EastTravelText != null)
                     {
                         RaiseMessage(CurrentLocation.EastTravelText);
                     }
                     break;
                 case LastTraveledDirection.south:
-                    if (location.SouthTravelText != "")
+                    if (location.SouthTravelText != null)
                     {
                         RaiseMessage(CurrentLocation.SouthTravelText);
                     }
                     break;
                 case LastTraveledDirection.west:
-                    if (location.WestTravelText != "")
+                    if (location.WestTravelText != null)
                     {
                         RaiseMessage(CurrentLocation.WestTravelText);
                     }
