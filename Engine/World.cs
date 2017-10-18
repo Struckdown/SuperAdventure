@@ -858,9 +858,13 @@ namespace Engine
             home.WestTravelText = "You make your way into the backalley behind your home.";
 
             townSquare.LocationToNorth = northRoad;
+            townSquare.NorthTravelText = "You leave town, heading out towards the big primary road to the north.";
             townSquare.LocationToSouth = home;
+            townSquare.SouthTravelText = "You return to your home.";
             townSquare.LocationToEast = marketDistrict;
+            townSquare.EastTravelText = "You make your way to the Market District.";
             townSquare.LocationToWest = westSuburbs;
+            townSquare.WestTravelText = "You head towards the primary living space of the town.";
 
             sideRoad.LocationToEast = deadEnd;
             sideRoad.EastTravelText = "You head off the road towards a small set of raised ledges with no exit.";
@@ -870,20 +874,31 @@ namespace Engine
             sideRoad.WestTravelText = "You head towards your home";
 
             backAlley.LocationToEast = home;
+            backAlley.EastTravelText = "You head back to your home.";
             backAlley.LocationToNorth = westSuburbs;
+            backAlley.NorthTravelText = "You leave the back alley and head for the main suburbs.";
 
             deadEnd.LocationToWest = sideRoad;
+            deadEnd.WestTravelText = "You return the way you came.";
 
             marketDistrict.LocationToNorth = generalStore;
+            marketDistrict.NorthTravelText = "You enter a small store named Ravens Goods.";
             marketDistrict.LocationToEast = eastGuardPost;
+            marketDistrict.EastTravelText = "You head towards the guardpost that oversees the eastern wall.";
             marketDistrict.LocationToSouth = sideRoad;
+            marketDistrict.SouthTravelText = "You head down the long winding path in the direction of your home.";
             marketDistrict.LocationToWest = townSquare;
+            marketDistrict.WestTravelText = "You head towards the large fountain where the town center is located.";
 
             generalStore.LocationToSouth = marketDistrict;
+            generalStore.SouthTravelText = "You exit the store.";
 
             eastGuardPost.LocationToWest = marketDistrict;
+            eastGuardPost.WestTravelText = "You make your way into the Market District.";
             eastGuardPost.LocationToNorth = archeryRange;
+            eastGuardPost.NorthTravelText = "You head towards the Archery Range.";
             eastGuardPost.LocationToEast = easternTrail;
+            eastGuardPost.EastTravelText = "The guard lets you pass, warning you of the dangers of the Desert.";
 
             easternTrail.LocationToSouth = alchemistHut;
             easternTrail.LocationToWest = eastGuardPost;
