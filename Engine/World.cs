@@ -901,8 +901,11 @@ namespace Engine
             eastGuardPost.EastTravelText = "The guard lets you pass, warning you of the dangers of the Desert.";
 
             easternTrail.LocationToSouth = alchemistHut;
+            easternTrail.SouthTravelText = "You follow a small winding path through the rugged sands towards a hut in the distance.";
             easternTrail.LocationToWest = eastGuardPost;
+            easternTrail.WestTravelText = "You head down the primary road towards city.";
             easternTrail.LocationToEast = brokenPass;
+            easternTrail.EastTravelText = "You make your way towards the broken cliffs in the distance.";
 
             archeryRange.LocationToSouth = eastGuardPost;
 
