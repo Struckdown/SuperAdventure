@@ -169,7 +169,7 @@ namespace Engine
             }
 
             // The player can enter this location
-            switch (lastTraveledDirection)
+            switch(lastTraveledDirection)
             {
                 case LastTraveledDirection.north:
                     RaiseMessage(CurrentLocation.NorthTravelText);
@@ -177,27 +177,31 @@ namespace Engine
                 case LastTraveledDirection.east:
                     //if (location.EastTravelText != null)
                     //{
-                        RaiseMessage(CurrentLocation.EastTravelText);
+                    RaiseMessage(CurrentLocation.EastTravelText);
                     //}
                     break;
                 case LastTraveledDirection.south:
                     //if (location.SouthTravelText != null)
                     //{
-                        RaiseMessage(CurrentLocation.SouthTravelText);
+                    RaiseMessage(CurrentLocation.SouthTravelText);
                     //}
                     break;
                 case LastTraveledDirection.west:
                     //if (location.WestTravelText != null)
                     //{
-                        RaiseMessage(CurrentLocation.WestTravelText);
-                   // }
+                    RaiseMessage(CurrentLocation.WestTravelText);
+                    // }
+                    break;
+                case LastTraveledDirection.noDirection:
+                    break;
+                default:
                     break;
             }
             lastTraveledDirection = LastTraveledDirection.noDirection;
 
             CurrentLocation = location;
 
-            if (CurrentMonster != null && CurrentMonster.IsDead == false)
+            if (CurrentMonster != null && CurrentMonster.IsDead == false && !IsDead)
             {
                 RaiseMessage("You run away from the " + CurrentMonster.Name);
             }

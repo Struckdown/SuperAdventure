@@ -908,56 +908,88 @@ namespace Engine
             easternTrail.EastTravelText = "You make your way towards the broken cliffs in the distance.";
 
             archeryRange.LocationToSouth = eastGuardPost;
+            archeryRange.SouthTravelText = "You leave the archer alone, seeing him score several direct hits, and you head south past the haybales.";
 
             brokenPass.LocationToWest = easternTrail;
+            brokenPass.WestTravelText = "You head towards the worn out road in the distance.";
             brokenPass.LocationToEast = desertEntrance;
+            brokenPass.EastTravelText = "You head towards the dull orange sands in the distance, the sun beating on your back.";
 
             desertEntrance.LocationToWest = brokenPass;
+            desertEntrance.WestTravelText = "You leave the desert, thanksful to be free from the blistering sun.";
 
             northRoad.LocationToSouth = townSquare;
+            northRoad.SouthTravelText = "You return to town.";
             northRoad.LocationToNorth = largeHill;
+            northRoad.NorthTravelText = "You make your way towards the large hill in the distance.";
 
             largeHill.LocationToSouth = northRoad;
+            largeHill.SouthTravelText = "You descend down the hill and head towards the main road.";
             largeHill.LocationToWest = cliff;
+            largeHill.WestTravelText = "You head for a large cliff in the distance.";
             largeHill.LocationToEast = rollingHills;
+            largeHill.EastTravelText = "You walk towards the collection of hills.";
 
             rollingHills.LocationToWest = largeHill;
+            rollingHills.WestTravelText = "You travel towards the biggest hill in the area.";
             rollingHills.LocationToEast = peacefulPond;
+            rollingHills.EastTravelText = "You continue past the hills and make your way towards a small pond you can see.";
             rollingHills.LocationToNorth = collosalCaveEntrance;
+            rollingHills.NorthTravelText = "You head towards a massive cave you can see in the distance.";
 
             peacefulPond.LocationToWest = rollingHills;
+            peacefulPond.WestTravelText = "You leave the pond and head back towards the many hills.";
 
             collosalCaveEntrance.LocationToSouth = rollingHills;
+            collosalCaveEntrance.SouthTravelText = "You leave the cave entrance and head back to the hills to get a better vantage point.";
 
             cliff.LocationToSouth = mudfield;
+            cliff.SouthTravelText = "You carefully climb down the cliff face. You're certainly not going to be climbing up that.";
             cliff.LocationToEast = largeHill;
+            cliff.EastTravelText = "You leave the cliff and head towards the massive hill.";
 
             mudfield.LocationToEast = forgottenTower;
+            mudfield.EastTravelText = "Leaving the mudfield, you make your way towards the tower you can see nearby.";
 
             forgottenTower.LocationToWest = mudfield;
+            forgottenTower.WestTravelText = "You make your way through the forest and find yourself quickly in a field of dirt and mud.";
             forgottenTower.LocationToSouth = lessTraveledRoad;
+            forgottenTower.SouthTravelText = "You head down a faint, overgrown path, one that no one has probably been down in months.";
             forgottenTower.LocationToNorth = stairsToTheSpire;
+            forgottenTower.NorthTravelText = "You enter the tower and begin ascending the stairs, hearing the sound of lightning in the distance.";
 
             stairsToTheSpire.LocationToNorth = forgottenTowerSpire;
+            stairsToTheSpire.NorthTravelText = "You finish ascending the tower and arrive at the great spire, lightning flashing all around suddenly.";
             stairsToTheSpire.LocationToSouth = forgottenTower;
+            stairsToTheSpire.SouthTravelText = "You descend down the stairs, the sound of lightning disappearing.";
 
             forgottenTowerSpire.LocationToSouth = stairsToTheSpire;
+            forgottenTowerSpire.SouthTravelText = "You leave the spire, lightning flashing all around you.";
 
             lessTraveledRoad.LocationToSouth = westSuburbs;
+            lessTraveledRoad.SouthTravelText = "You head towards the western section of the town where the commonfolk live.";
             lessTraveledRoad.LocationToNorth = forgottenTower;
+            lessTraveledRoad.NorthTravelText = "You make your way towards the distance tower, rumored to be where a powerful wizard lives.";
             //farmhouse.LocationToEast = townSquare;
             //farmhouse.LocationToWest = farmersField;
 
             farmersField.LocationToNorth = home;
+            farmersField.NorthTravelText = "You return to your home, climbing over the nearby fence.";
             farmersField.LocationToWest = lostRoad;
+            farmersField.WestTravelText = "You stumble across a path of unusually short and unhealthy grass and follow it.";
 
             alchemistHut.LocationToNorth = easternTrail;
+            alchemistHut.NorthTravelText = "You return to the main path, bidding farewell to the alchemist.";
             alchemistHut.LocationToSouth = alchemistsGarden;
+            alchemistHut.SouthTravelText = "You step into the garden and admire the various plants growing here.";
 
             alchemistsGarden.LocationToNorth = alchemistHut;
+            alchemistsGarden.NorthTravelText = "You exit the garden and return to the alchemist's home.";
 
             westGuardPost.LocationToEast = westSuburbs;
+            westGuardPost.EastTravelText = "You leave the guard post and return back to town.";
             westGuardPost.LocationToWest = bridge;
+            westGuardPost.WestTravelText = "You pass by the guard and make way towards the bridge, fearful of what might be under or around it.";
 
             westSuburbs.LocationToNorth = lessTraveledRoad;
             westSuburbs.LocationToSouth = backAlley;
