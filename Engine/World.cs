@@ -992,9 +992,13 @@ namespace Engine
             westGuardPost.WestTravelText = "You pass by the guard and make way towards the bridge, fearful of what might be under or around it.";
 
             westSuburbs.LocationToNorth = lessTraveledRoad;
+            westSuburbs.NorthTravelText = "You leave town, heading down a barely distinguishable road.";
             westSuburbs.LocationToSouth = backAlley;
+            westSuburbs.SouthTravelText = "You head into the backalleys of town.";
             westSuburbs.LocationToEast = townSquare;
+            westSuburbs.EastTravelText = "You head to the town fountain.";
             westSuburbs.LocationToWest = westGuardPost;
+            westSuburbs.WestTravelText = "You make leave for the local guard post.";
 
             bridge.LocationToEast = westGuardPost;
             bridge.LocationToWest = trifoxTrail;
