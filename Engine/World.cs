@@ -1001,11 +1001,16 @@ namespace Engine
             westSuburbs.WestTravelText = "You make leave for the local guard post.";
 
             bridge.LocationToEast = westGuardPost;
+            bridge.WestTravelText = "You cross over the bridge and head for the local town.";
             bridge.LocationToWest = trifoxTrail;
+            bridge.WestTravelText = "You cautiously cross the bridge, watching for additional trolls.";
 
             trifoxTrail.LocationToEast = bridge;
+            trifoxTrail.EastTravelText = "You head down the Trifox Trail in the direction of town.";
             trifoxTrail.LocationToNorth = entranceYognarWoods;
+            trifoxTrail.NorthTravelText = "Heading north, you leave the primary trail and make way for Yognar Woods.";
             trifoxTrail.LocationToWest = river;
+            trifoxTrail.WestTravelText = "You continue towards the surging river in the distance.";
 
             entranceYognarWoods.LocationToNorth = inTheWoods;
             entranceYognarWoods.LocationToSouth = trifoxTrail;
