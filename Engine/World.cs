@@ -1013,17 +1013,26 @@ namespace Engine
             trifoxTrail.WestTravelText = "You continue towards the surging river in the distance.";
 
             entranceYognarWoods.LocationToNorth = inTheWoods;
+            entranceYognarWoods.NorthTravelText = "Deeper and deeper you go into the woods. You feel quite lost...";
             entranceYognarWoods.LocationToSouth = trifoxTrail;
+            entranceYognarWoods.SouthTravelText = "You find an exit from the woods and leave as quickly as you can.";
 
             inTheWoods.LocationToSouth = entranceYognarWoods;
+            inTheWoods.SouthTravelText = "You stumble around and think you find yourself near what you think is the entrance to the woods.";
 
             river.LocationToEast = trifoxTrail;
+            river.EastTravelText = "You leave the river and head towards the Trifox Trail.";
             river.LocationToNorth = riverUptrail;
+            river.NorthTravelText = "You follow the river north.";
             river.LocationToSouth = riverDowntrail;
+            river.SouthTravelText = "You follow the river south.";
             river.LocationToWest = westBrookDock;
+            river.WestTravelText = "Using a raft, you cross the river carefully. You make your way into the town.";
 
             riverUptrail.LocationToNorth = riverUptrailEnd;
+            riverUptrail.NorthTravelText = "You continue following the river, following its bends and curves.";
             riverUptrail.LocationToSouth = river;
+            riverUptrail.SouthTravelText = "You follow the river, returning near the Trifox Trail.";
 
             riverUptrailEnd.LocationToSouth = riverUptrail;
 
