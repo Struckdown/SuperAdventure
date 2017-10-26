@@ -1035,13 +1035,18 @@ namespace Engine
             riverUptrail.SouthTravelText = "You follow the river, returning near the Trifox Trail.";
 
             riverUptrailEnd.LocationToSouth = riverUptrail;
+            riverUptrailEnd.SouthTravelText = "You gaze at the ocean before you turn around to head back upstream.";
 
             riverDowntrail.LocationToNorth = river;
+            riverDowntrail.NorthTravelText = "You follow the river downstream.";
             //riverDowntrail.LocationToSouth = mountainEntrance;
 
             westBrookDock.LocationToEast = river;
+            westBrookDock.EastTravelText = "Passing by the fishermen, you climb onto a raft and cross the stream.";
             westBrookDock.LocationToNorth = kingsRoad;
+            westBrookDock.NorthTravelText = "You leave West Brook and head down King's Road.";
             westBrookDock.LocationToWest = westBrookTownCenter;
+            westBrookDock.WestTravelText = "You head to West Brook's Town Center.";
 
             westBrookTownCenter.LocationToNorth = cemetary;
             westBrookTownCenter.LocationToWest = chapel;
