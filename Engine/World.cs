@@ -1049,9 +1049,13 @@ namespace Engine
             westBrookDock.WestTravelText = "You head to West Brook's Town Center.";
 
             westBrookTownCenter.LocationToNorth = cemetary;
+            westBrookTownCenter.NorthTravelText = "You stumble into the cemetary. No one has been here for a long time.";
             westBrookTownCenter.LocationToWest = chapel;
+            westBrookTownCenter.WestTravelText = "You make your way towards the pristine looking structure in the distance.";
             westBrookTownCenter.LocationToSouth = westBrookGeneralStore;
+            westBrookTownCenter.SouthTravelText = "A general store catches your eye and you head towards it.";
             westBrookTownCenter.LocationToEast = westBrookDock;
+            westBrookTownCenter.EastTravelText = "You make your way to the docks.";
 
             chapel.LocationToEast = westBrookTownCenter;
 
