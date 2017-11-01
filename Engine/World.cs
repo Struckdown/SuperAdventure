@@ -1058,13 +1058,18 @@ namespace Engine
             westBrookTownCenter.EastTravelText = "You make your way to the docks.";
 
             chapel.LocationToEast = westBrookTownCenter;
+            chapel.EastTravelText = "You leave the chapel and head back to the town center.";
 
             westBrookGeneralStore.LocationToNorth = westBrookTownCenter;
+            westBrookGeneralStore.NorthTravelText = "You leave the store and return to the town center.";
 
             cemetary.LocationToSouth = westBrookTownCenter;
+            cemetary.SouthTravelText = "You quickly leave the cemetary.";
 
             kingsRoad.LocationToSouth = westBrookDock;
+            kingsRoad.SouthTravelText = "You head south on the King's Road and return to the docks of West Brook.";
             kingsRoad.LocationToNorth = valleyNearCastle;
+            kingsRoad.NorthTravelText = "You continue north on the King's Road towards the castle you see in the distance.";
 
             valleyNearCastle.LocationToSouth = kingsRoad;
             valleyNearCastle.LocationToNorth = castleGates;
