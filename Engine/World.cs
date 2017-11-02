@@ -1072,11 +1072,16 @@ namespace Engine
             kingsRoad.NorthTravelText = "You continue north on the King's Road towards the castle you see in the distance.";
 
             valleyNearCastle.LocationToSouth = kingsRoad;
+            valleyNearCastle.SouthTravelText = "You leave the valley, following the road.";
             valleyNearCastle.LocationToNorth = castleGates;
+            valleyNearCastle.NorthTravelText = "You approach the castle in the distance.";
 
             castleGates.LocationToSouth = valleyNearCastle;
+            castleGardens.SouthTravelText = "You leave the gates and head for the valley.";
             castleGates.LocationToWest = westCourtyard;
+            castleGates.WestTravelText = "You pass by the gates and head to the western coutyard.";
             castleGates.LocationToEast = eastCourtyard;
+            castleGates.EastTravelText = "You pass by the gates and head to the eastern courtyard.";
             castleGates.LocationToNorth = grandHall;
 
             westCourtyard.LocationToNorth = gardnersHouse;
