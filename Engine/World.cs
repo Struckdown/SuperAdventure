@@ -1085,17 +1085,25 @@ namespace Engine
             castleGates.LocationToNorth = grandHall;
 
             westCourtyard.LocationToNorth = gardnersHouse;
+            westCourtyard.NorthTravelText = "You wander into a small cottage with a sign that reads 'The Gardner'.";
             westCourtyard.LocationToEast = castleGates;
+            westCourtyard.EastTravelText = "You return to the castle gates.";
 
             gardnersHouse.LocationToSouth = westCourtyard;
+            gardnersHouse.SouthTravelText = "You thank the gardner and leave his abode.";
 
             eastCourtyard.LocationToWest = castleGates;
+            eastCourtyard.WestTravelText = "You return to the castle gates.";
             eastCourtyard.LocationToNorth = castleGardens;
+            eastCourtyard.NorthTravelText = "You head towards the gardens.";
 
             castleGardens.LocationToSouth = eastCourtyard;
+            castleGardens.SouthTravelText = "You head towards the courtyards.";
             castleGardens.LocationToNorth = castleShrine;
+            castleGardens.NorthTravelText = "You head towards a large statue nearby.";
 
             castleShrine.LocationToSouth = castleGardens;
+            castleShrine.SouthTravelText = "You leave the large shrine and head towards the gardens.";
 
             grandHall.LocationToSouth = castleGates;
             grandHall.LocationToEast = diningHall;

@@ -168,8 +168,13 @@ namespace Engine
                 return;
             }
 
+            if (CurrentMonster != null && CurrentMonster.IsDead == false && !IsDead)
+            {
+                RaiseMessage("You run away from the " + CurrentMonster.Name);
+            }
+
             // The player can enter this location
-            switch(lastTraveledDirection)
+            switch (lastTraveledDirection)
             {
                 case LastTraveledDirection.north:
                     RaiseMessage(CurrentLocation.NorthTravelText);
@@ -200,11 +205,6 @@ namespace Engine
             lastTraveledDirection = LastTraveledDirection.noDirection;
 
             CurrentLocation = location;
-
-            if (CurrentMonster != null && CurrentMonster.IsDead == false && !IsDead)
-            {
-                RaiseMessage("You run away from the " + CurrentMonster.Name);
-            }
 
             CompletelyHeal();
 
