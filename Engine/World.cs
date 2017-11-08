@@ -1106,19 +1106,29 @@ namespace Engine
             castleShrine.SouthTravelText = "You leave the large shrine and head towards the gardens.";
 
             grandHall.LocationToSouth = castleGates;
+            grandHall.SouthTravelText = "You leave the Grand Hall and make your way to the castle gates.";
             grandHall.LocationToEast = diningHall;
+            grandHall.EastTravelText = "Seeing a large room, you stumble into it and find yourself in the dining hall.";
             grandHall.LocationToNorth = upperHall;
+            grandHall.NorthTravelText = "You ascend a massive set of stairs.";
 
             diningHall.LocationToWest = grandHall;
+            diningHall.WestTravelText = "You leave the dining hall and return to the Grand Hall.";
 
             upperHall.LocationToSouth = grandHall;
+            upperHall.SouthTravelText = "You descend down the massive stairs.";
             upperHall.LocationToWest = castleBedroom;
+            upperHall.WestTravelText = "Stumbling about, you eventually find yourself inside a set of bedrooms.";
             upperHall.LocationToNorth = throneRoom;
+            upperHall.NorthTravelText = "You go past a giant set of doors and find yourself in the throne room.";
 
             castleBedroom.LocationToEast = upperHall;
+            castleBedroom.EastTravelText = "You return to the second floor.";
 
             throneRoom.LocationToSouth = upperHall;
+            throneRoom.SouthTravelText = "You leave the throne room and head back out the grand doors.";
             throneRoom.LocationToNorth = castleVault;
+            throneRoom.NorthTravelText = "You go behind the throne and find yourself inside a massive secret vault.";
 
             castleVault.LocationToSouth = throneRoom;
 
