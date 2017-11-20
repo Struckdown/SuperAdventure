@@ -1044,9 +1044,9 @@ namespace Engine
             westBrookDock.LocationToEast = river;
             westBrookDock.EastTravelText = "Passing by the fishermen, you climb onto a raft and cross the stream.";
             westBrookDock.LocationToNorth = kingsRoad;
-            westBrookDock.NorthTravelText = "You leave West Brook and head down King's Road.";
+            westBrookDock.NorthTravelText = "You leave Westbrook and head down King's Road.";
             westBrookDock.LocationToWest = westBrookTownCenter;
-            westBrookDock.WestTravelText = "You head to West Brook's Town Center.";
+            westBrookDock.WestTravelText = "You head to Westbrook's Town Center.";
 
             westBrookTownCenter.LocationToNorth = cemetary;
             westBrookTownCenter.NorthTravelText = "You stumble into the cemetary. No one has been here for a long time.";
@@ -1077,12 +1077,13 @@ namespace Engine
             valleyNearCastle.NorthTravelText = "You approach the castle in the distance.";
 
             castleGates.LocationToSouth = valleyNearCastle;
-            castleGardens.SouthTravelText = "You leave the gates and head for the valley.";
+            castleGates.SouthTravelText = "You leave the gates and head for the valley.";
             castleGates.LocationToWest = westCourtyard;
             castleGates.WestTravelText = "You pass by the gates and head to the western coutyard.";
             castleGates.LocationToEast = eastCourtyard;
             castleGates.EastTravelText = "You pass by the gates and head to the eastern courtyard.";
             castleGates.LocationToNorth = grandHall;
+            castleGates.NorthTravelText = "The guards let you pass through the gates and into the Grand Hall.";
 
             westCourtyard.LocationToNorth = gardnersHouse;
             westCourtyard.NorthTravelText = "You wander into a small cottage with a sign that reads 'The Gardner'.";
@@ -1131,32 +1132,50 @@ namespace Engine
             throneRoom.NorthTravelText = "You go behind the throne and find yourself inside a massive secret vault.";
 
             castleVault.LocationToSouth = throneRoom;
+            castleVault.SouthTravelText = "You leave the vault, returning to the throne room.";
 
             lostRoad.LocationToEast = farmersField;
+            lostRoad.EastTravelText = "Following the winding road, you soon return to the farmer's field.";
             lostRoad.LocationToWest = eastLostRuins;
+            lostRoad.WestTravelText = "You head towards the ruins you can see in the distance.";
 
             eastLostRuins.LocationToEast = lostRoad;
+            eastLostRuins.EastTravelText = "You return to the winding road in the direction of the field.";
             eastLostRuins.LocationToSouth = southernBrokenStructure;
+            eastLostRuins.SouthTravelText = "You investigate one of the broken buildings nearby.";
             eastLostRuins.LocationToWest = westernLostRuins;
+            eastLostRuins.WestTravelText = "You head over to the other half of the broken ruins.";
 
             southernBrokenStructure.LocationToNorth = eastLostRuins;
+            southernBrokenStructure.NorthTravelText = "You leave the collapsed building.";
 
             westernLostRuins.LocationToEast = eastLostRuins;
+            westernLostRuins.EastTravelText = "You return to the eastern lost ruins.";
             westernLostRuins.LocationToNorth = northernBrokenStructure;
+            westernLostRuins.NorthTravelText = "You dart into another broken down building before more creatures swarm onto you.";
             westernLostRuins.LocationToSouth = finalLostRuins;
+            westernLostRuins.SouthTravelText = "You follow the road through the ruins and arrive at a small set of very large destroyed buildings.";
 
             northernBrokenStructure.LocationToSouth = westernLostRuins;
+            northernBrokenStructure.SouthTravelText = "You leave the building and return to exploring the ruins.";
 
             finalLostRuins.LocationToNorth = westernLostRuins;
+            finalLostRuins.NorthTravelText = "You return to the primary cluster of buildings.";
             finalLostRuins.LocationToWest = dragonAltar;
+            finalLostRuins.WestTravelText = "In the distance, you can see a giant altar of a dragon. You make way towards it.";
 
             dragonAltar.LocationToEast = finalLostRuins;
+            dragonAltar.EastTravelText = "You return to the ruins.";
             dragonAltar.LocationToWest = pedestal;
+            dragonAltar.WestTravelText = "Circling around the altar, you find a pedestal.";
 
             pedestal.LocationToEast = dragonAltar;
+            pedestal.EastTravelText = "You return to the front of the altar.";
             pedestal.LocationToSouth = darkPortal;
+            pedestal.SouthTravelText = "You feel the air shift, as a dark pulsating void can be seen to your south. You are drawn towards it.";
 
             darkPortal.LocationToNorth = pedestal;
+            darkPortal.NorthTravelText = "You break away from the draw of the portal and return to the pedestal by the dragon statue.";
 
 
 

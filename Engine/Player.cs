@@ -170,7 +170,7 @@ namespace Engine
 
             if (CurrentMonster != null && CurrentMonster.IsDead == false && !IsDead)
             {
-                RaiseMessage("You run away from the " + CurrentMonster.Name);
+                RaiseMessage("You run away from the " + CurrentMonster.Name, true);
             }
 
             // The player can enter this location
