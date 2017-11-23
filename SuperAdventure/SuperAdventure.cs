@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 using Engine;
 
@@ -217,9 +218,8 @@ namespace SuperAdventure
             }
         }
 
-        private void btnUsePotion_Click(object sender, EventArgs e)
+        private void btnUseItem_Click(object sender, EventArgs e)
         {
-            //TODO check if potion or damage scroll or what
             SecondaryItem secondaryItem = ((SecondaryItem)cboSecondaryItem.SelectedItem);
 
             if(secondaryItem.isPotion == true)

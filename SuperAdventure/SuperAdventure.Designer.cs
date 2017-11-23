@@ -146,7 +146,7 @@
             this.cboWeapons.Location = new System.Drawing.Point(492, 688);
             this.cboWeapons.Margin = new System.Windows.Forms.Padding(4);
             this.cboWeapons.Name = "cboWeapons";
-            this.cboWeapons.Size = new System.Drawing.Size(160, 24);
+            this.cboWeapons.Size = new System.Drawing.Size(254, 24);
             this.cboWeapons.TabIndex = 9;
             // 
             // cboSecondaryItem
@@ -155,7 +155,7 @@
             this.cboSecondaryItem.Location = new System.Drawing.Point(492, 730);
             this.cboSecondaryItem.Margin = new System.Windows.Forms.Padding(4);
             this.cboSecondaryItem.Name = "cboSecondaryItem";
-            this.cboSecondaryItem.Size = new System.Drawing.Size(160, 24);
+            this.cboSecondaryItem.Size = new System.Drawing.Size(254, 24);
             this.cboSecondaryItem.TabIndex = 10;
             this.cboSecondaryItem.SelectedIndexChanged += new System.EventHandler(this.cboSecondaryItem_SelectedIndexChanged);
             // 
@@ -180,7 +180,7 @@
             this.btnUseSecondaryItem.TabIndex = 12;
             this.btnUseSecondaryItem.Text = "Use";
             this.btnUseSecondaryItem.UseVisualStyleBackColor = true;
-            this.btnUseSecondaryItem.Click += new System.EventHandler(this.btnUsePotion_Click);
+            this.btnUseSecondaryItem.Click += new System.EventHandler(this.btnUseItem_Click);
             // 
             // btnNorth
             // 
